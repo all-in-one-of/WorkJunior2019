@@ -1,0 +1,36 @@
+global proc SkipTranslater()
+{
+    parentConstraint -mo -st x -st y -st z;
+}
+
+global proc SkipRotater()
+{
+    parentConstraint -mo -sr x -sr y -sr z;
+}
+global proc RegularParent()
+{
+    parentConstraint -mo;
+}
+
+global proc Menu()
+{
+    if (`window -exists "Menu"`)
+        {
+             deleteUI -window "Menu";
+        }
+        else
+        {
+            string $toolWindow = "MenuWindow";
+            string $toolWindow = `window -title "Menu" $toolWindow`;
+            string $initialCol = `columnLayout -parent $toolWindow -adjustableColumn 1`;
+                scrollField -wordWrap true -width 150 -height 60 -text "Now Select the script you wish to exicute." -editable false;
+
+                button -label "Parent (Skip Rotate)" -command ("SkipRotater()");
+                button -label "Parent (Skip Translate)" -command ("SkipTranslater()");
+                button -label "Parent" -command ("RegularParent()");
+                                        
+            setParent ..;
+            showWindow $toolWindow;
+        }
+}
+Menu();

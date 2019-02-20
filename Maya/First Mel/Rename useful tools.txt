@@ -1,0 +1,10 @@
+Useful Tools for Rename script.
+
+Tokenize
+Strings
+Strip
+Compare
+Substitute
+Substring
+Endswith
+Startswith

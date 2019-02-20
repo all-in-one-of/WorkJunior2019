@@ -1,0 +1,16 @@
+// Find and print selection script
+// use as reference for how to set translations.
+
+{
+    //make the Selection an array
+    string $sel[] = `ls -sl`;
+    //name a variable
+    string $tree;
+    for ($tree in $sel)
+    {
+        print ($tree + ": ");
+         print (getAttr($tree + ".translateX") + ", " + getAttr($tree + ".translateY") + ", " + getAttr($tree + ".translateZ") + "." + "\n");
+    }
+    
+    
+}

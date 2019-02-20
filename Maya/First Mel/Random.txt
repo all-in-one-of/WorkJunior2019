@@ -1,0 +1,33 @@
+//New Proc For Random number generator
+global proc int randomNumber()
+            {
+            int $numRandom = rand(-15,15);
+            print $numRandom;
+            return $numRandom;
+            }
+
+global proc randomizer ()
+{
+            
+    //make the Selection an array
+    string $sel[] = `ls -sl`;
+    string $Object;
+    
+    for ($Object in $sel)
+        {
+   randomNumber();
+      int $numRand = `randomNumber`;
+    setAttr ($Object + ".translateX")$numRand;
+    randomNumber();
+      int $numRand = `randomNumber`;
+    setAttr ($Object + ".translateY")$numRand;
+    randomNumber();
+      int $numRand = `randomNumber`;
+    setAttr ($Object + ".translateZ")$numRand;
+
+        print ($Object + ": ");
+         print (getAttr($Object + ".translateX") + ", " + getAttr($Object + ".translateY") + ", " + getAttr($Object + ".translateZ") + "." + "\n");
+    }
+    
+}
+randomizer();

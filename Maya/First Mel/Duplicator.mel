@@ -1,0 +1,15 @@
+global proc Duplication()
+{
+    string $sels[] = `ls -sl`;
+    string $object;
+    $arraySize = size($sels);
+    
+    print ("Array Size " + $arraySize + "\n");
+    for($object in $sels)
+    {
+        duplicate;
+       
+    }
+}
+Duplication();
+
