@@ -18,7 +18,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: TreeA12_lambert4SG
-    second: {fileID: 2100000, guid: 62956cd9c3a93584e9ea2249b58f21ad, type: 2}
+    second: {fileID: 2100000, guid: 5a4a9f0bf13c17740bfb6f36597b89a6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
