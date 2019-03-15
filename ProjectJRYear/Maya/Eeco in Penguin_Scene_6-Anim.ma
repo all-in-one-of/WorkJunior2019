@@ -1,23 +1,19 @@
 //Maya ASCII 2018ff09 scene
 //Name: Eeco in Penguin_Scene_6-Anim.ma
-//Last modified: Sun, Mar 03, 2019 08:16:38 PM
+//Last modified: Thu, Mar 14, 2019 09:48:31 PM
 //Codeset: 1252
 file -rdi 1 -ns "Penguin1" -dr 1 -rfn "PenguinRN1" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/annae/Desktop/Docs/School/Junior year/Marty/EECO Anims//Penguin.ma";
-file -rdi 1 -ns "Penguin2" -rfn "Penguin1RN" -typ "mayaAscii" "C:/Users/annae/Desktop/Docs/School/Junior year/Marty/EECO Anims//Penguin.ma";
 file -rdi 1 -ns "Penguin" -rfn "PenguinRN" -op "v=0;" -typ "mayaAscii" "C:/Users/annae/Desktop/Docs/School/Junior year/Marty/EECO Anims//Penguin.ma";
-file -rdi 1 -ns "Penguin3" -rfn "PenguinRN2" -typ "mayaAscii" "C:/Users/annae/Desktop/Docs/School/Junior year/Marty/EECO Anims//Penguin.ma";
 file -rdi 1 -ns "EECORig_Claw" -rfn "EECORig_ClawRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/10541409/Documents/JrWorkAddis/ProjectJRYear/Maya/EECORig&Claw.ma";
 file -r -ns "Penguin1" -dr 1 -rfn "PenguinRN1" -op "v=0;" -typ "mayaAscii" "C:/Users/annae/Desktop/Docs/School/Junior year/Marty/EECO Anims//Penguin.ma";
-file -r -ns "Penguin2" -dr 1 -rfn "Penguin1RN" -typ "mayaAscii" "C:/Users/annae/Desktop/Docs/School/Junior year/Marty/EECO Anims//Penguin.ma";
 file -r -ns "Penguin" -dr 1 -rfn "PenguinRN" -op "v=0;" -typ "mayaAscii" "C:/Users/annae/Desktop/Docs/School/Junior year/Marty/EECO Anims//Penguin.ma";
-file -r -ns "Penguin3" -dr 1 -rfn "PenguinRN2" -typ "mayaAscii" "C:/Users/annae/Desktop/Docs/School/Junior year/Marty/EECO Anims//Penguin.ma";
 file -r -ns "EECORig_Claw" -dr 1 -rfn "EECORig_ClawRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/10541409/Documents/JrWorkAddis/ProjectJRYear/Maya/EECORig&Claw.ma";
 requires maya "2018ff09";
-requires "mtoa" "3.0.1.1";
 requires "stereoCamera" "10.0";
+requires "mtoa" "3.0.1.1";
 requires "mtoa" "3.0.1.1";
 requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
@@ -30,18 +26,18 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "62038F3E-47B9-6259-CE48-0D8095BA88CD";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -804.34209334392381 52.447333261896709 762.16567006163802 ;
-	setAttr ".r" -type "double3" 0.26164723321715677 -986.19999999994502 0 ;
+	setAttr ".t" -type "double3" -831.89662027761221 54.717190109091909 752.48237085894345 ;
+	setAttr ".r" -type "double3" 347.06164723279471 -955.39999999984263 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "BBDF3207-463C-C4BB-D107-A984D85E71B1";
 	setAttr -k off ".v" no;
 	setAttr ".ovr" 1.3;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 20.148978673679373;
+	setAttr ".coi" 22.165167505413187;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -844.14227219630584 51.668628521333233 766.27158910239473 ;
+	setAttr ".tp" -type "double3" -849.27596858712764 47.92650308188572 771.1232801445135 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 	setAttr ".dgm" no;
 	setAttr ".dr" yes;
@@ -25557,7 +25553,7 @@ createNode camera -n "cameraShape2" -p "camera2";
 	setAttr ".cap" -type "double2" 1.41732 0.94488 ;
 	setAttr ".ff" 0;
 	setAttr ".ovr" 1.3;
-	setAttr ".coi" 15.268947546925778;
+	setAttr ".coi" 8.3555220463777324;
 	setAttr ".ow" 30;
 	setAttr ".imn" -type "string" "camera1";
 	setAttr ".den" -type "string" "camera1_depth";
@@ -25615,7 +25611,7 @@ createNode mesh -n "pSphereShape1" -p "pSphere1";
 	setAttr -s 4 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.15000000596046448 0.62500008940696716 ;
+	setAttr ".pv" -type "double2" 0.75000011920928955 0.10000000149011612 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
@@ -29071,7 +29067,7 @@ createNode locator -n "locatorShape2" -p "locator2";
 	rename -uid "9F9C7AFD-49A9-5EEB-0E0E-ABAC1141CADC";
 	setAttr -k off ".v";
 createNode fosterParent -n "EECORig_ClawRNfosterParent1";
-	rename -uid "2F99FB5E-4468-B5A4-34EA-21BC5610AA1E";
+	rename -uid "65427AA8-4006-C7EA-262F-EF93568E3D4A";
 createNode parentConstraint -n "Translate_FK_Ctrl_parentConstraint1" -p "EECORig_ClawRNfosterParent1";
 	rename -uid "22A0E8DE-4226-22C1-E4E5-2B9B09E77745";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "pCylinder1W0" -dv 1 -min 0 -at "double";
@@ -29092,22 +29088,22 @@ createNode parentConstraint -n "Translate_FK_Ctrl_parentConstraint1" -p "EECORig
 	setAttr ".rsrr" -type "double3" 90 6.3611093629270335e-15 100 ;
 	setAttr -k on ".w0";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "6EC3F985-4A64-916C-8DAB-599D6A8DD0D3";
+	rename -uid "3215EA0B-4D26-89C4-612D-309206F23239";
 	setAttr -s 8 ".lnk";
 	setAttr -s 8 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "23BC3AF2-4F46-E961-1764-65B51A847E6D";
+	rename -uid "9157E099-440C-F79C-984C-7B9DB3D93004";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 2 1 0 ;
 	setAttr -s 2 ".bspr";
 	setAttr -s 2 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "CDBFAA3A-4624-043F-ACE6-50AEDDF28A1A";
+	rename -uid "18E2ED08-492B-F1BF-60C0-98969625A884";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "9DD9AFFF-4025-942E-FC78-B1A47DB7CFD8";
+	rename -uid "55A97B34-4D71-1927-D287-118FB7A7FD96";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "232505B5-4509-E4F2-1E8D-618B68CAE291";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "D62B6473-4BE1-7091-FC93-C2833848CAD9";
+	rename -uid "2DC7350B-4125-1EA6-DE60-BCA05401DDD6";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "E54D00F2-45FE-BCB4-6984-A28936D45965";
 	setAttr ".g" yes;
@@ -29117,53 +29113,53 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
-		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n"
-		+ "            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n"
-		+ "            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n"
-		+ "            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n"
-		+ "            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n"
-		+ "            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n"
-		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"camera2\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n"
-		+ "            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n"
-		+ "            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 0\n            -nurbsCurves 0\n            -nurbsSurfaces 0\n            -polymeshes 1\n            -subdivSurfaces 0\n            -planes 0\n            -lights 0\n            -cameras 0\n            -controlVertices 0\n            -hulls 0\n            -grid 1\n            -imagePlane 0\n            -joints 0\n            -ikHandles 0\n            -deformers 0\n            -dynamics 0\n            -particleInstancers 0\n            -fluids 0\n            -hairSystems 0\n            -follicles 0\n"
-		+ "            -nCloths 0\n            -nParticles 0\n            -nRigids 0\n            -dynamicConstraints 0\n            -locators 0\n            -manipulators 1\n            -pluginShapes 0\n            -dimensions 0\n            -handles 0\n            -pivots 0\n            -textures 0\n            -strokes 0\n            -motionTrails 0\n            -clipGhosts 0\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 956\n            -height 690\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 0 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n"
-		+ "            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n"
-		+ "            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n"
-		+ "            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n"
-		+ "            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n"
-		+ "                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 1\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n"
-		+ "                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 1\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 1\n                -autoFitTime 0\n"
-		+ "                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showResults \"off\" \n                -showBufferCurves \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -showCurveNames 0\n                -showActiveCurveNames 0\n                -stackedCurves 0\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -displayNormalized 0\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -classicMode 1\n                -valueLinesToggle 1\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 1\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n"
-		+ "                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n"
-		+ "                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -autoFitTime 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -autoFitTime 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -autoFitTime 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n"
-		+ "                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n"
-		+ "\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n"
-		+ "                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                $editorName;\n\t\t\t}\n\t\t} else {\n\t\t\t$label = `panel -q -label $panelName`;\n\t\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n"
-		+ "                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n"
-		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n"
-		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\nstring $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"camera1\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n"
-		+ "                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n"
-		+ "                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n"
-		+ "                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n"
-		+ "            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n"
-		+ "            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n"
-		+ "        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"camera2\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 0\\n    -nurbsCurves 0\\n    -nurbsSurfaces 0\\n    -polymeshes 1\\n    -subdivSurfaces 0\\n    -planes 0\\n    -lights 0\\n    -cameras 0\\n    -controlVertices 0\\n    -hulls 0\\n    -grid 1\\n    -imagePlane 0\\n    -joints 0\\n    -ikHandles 0\\n    -deformers 0\\n    -dynamics 0\\n    -particleInstancers 0\\n    -fluids 0\\n    -hairSystems 0\\n    -follicles 0\\n    -nCloths 0\\n    -nParticles 0\\n    -nRigids 0\\n    -dynamicConstraints 0\\n    -locators 0\\n    -manipulators 1\\n    -pluginShapes 0\\n    -dimensions 0\\n    -handles 0\\n    -pivots 0\\n    -textures 0\\n    -strokes 0\\n    -motionTrails 0\\n    -clipGhosts 0\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 956\\n    -height 690\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 0 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"camera2\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 0\\n    -nurbsCurves 0\\n    -nurbsSurfaces 0\\n    -polymeshes 1\\n    -subdivSurfaces 0\\n    -planes 0\\n    -lights 0\\n    -cameras 0\\n    -controlVertices 0\\n    -hulls 0\\n    -grid 1\\n    -imagePlane 0\\n    -joints 0\\n    -ikHandles 0\\n    -deformers 0\\n    -dynamics 0\\n    -particleInstancers 0\\n    -fluids 0\\n    -hairSystems 0\\n    -follicles 0\\n    -nCloths 0\\n    -nParticles 0\\n    -nRigids 0\\n    -dynamicConstraints 0\\n    -locators 0\\n    -manipulators 1\\n    -pluginShapes 0\\n    -dimensions 0\\n    -handles 0\\n    -pivots 0\\n    -textures 0\\n    -strokes 0\\n    -motionTrails 0\\n    -clipGhosts 0\\n    -greasePencils 0\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 956\\n    -height 690\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 0 \\n    $editorName\"\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n"
+		+ "            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n"
+		+ "            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n"
+		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n"
+		+ "            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n"
+		+ "            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n"
+		+ "            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"camera2\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n"
+		+ "            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n"
+		+ "            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n"
+		+ "            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 956\n            -height 690\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n"
+		+ "            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n"
+		+ "            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n"
+		+ "            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 1\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n"
+		+ "                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n"
+		+ "                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 1\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 1\n                -autoFitTime 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showResults \"off\" \n                -showBufferCurves \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -showCurveNames 0\n                -showActiveCurveNames 0\n"
+		+ "                -stackedCurves 0\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -displayNormalized 0\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -classicMode 1\n                -valueLinesToggle 1\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n"
+		+ "                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 1\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n"
+		+ "                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n"
+		+ "                -displayValues 0\n                -autoFit 0\n                -autoFitTime 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -autoFitTime 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n"
+		+ "                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -autoFitTime 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n"
+		+ "                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n"
+		+ "                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                $editorName;\n\t\t\t}\n\t\t} else {\n"
+		+ "\t\t\t$label = `panel -q -label $panelName`;\n\t\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n"
+		+ "                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n"
+		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\nstring $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"camera1\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n"
+		+ "                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n"
+		+ "                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n"
+		+ "                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n"
+		+ "                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n"
+		+ "            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n"
+		+ "            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n"
+		+ "\t\t\t\t\t\"modelPanel\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"camera2\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 956\\n    -height 690\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"camera2\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 956\\n    -height 690\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 120 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "26813ADB-4F5E-5C61-3820-478F2E7A0641";
-	setAttr ".b" -type "string" "playbackOptions -min 36 -max 200 -ast 0 -aet 200 ";
+	setAttr ".b" -type "string" "playbackOptions -min 0 -max 200 -ast 0 -aet 200 ";
 	setAttr ".st" 6;
 createNode animCurveTL -n "L_Leg_IK_Handle_translateX";
 	rename -uid "EB1593A6-49D4-DC5E-6A5C-FC86899DFC7A";
@@ -31682,439 +31678,6 @@ createNode animCurveTU -n "L_Ankle_Jnt_Ctrl_FollowTranslate";
 	rename -uid "B9D85A61-41A6-5DEA-5DD5-EF87859FE7A1";
 	setAttr ".tan" 2;
 	setAttr ".ktv[0]"  1 1;
-createNode reference -n "Penguin1RN";
-	rename -uid "9A56EA22-4F34-5A97-52CB-5C975AC272DB";
-	setAttr -s 120 ".phl";
-	setAttr ".phl[1]" 0;
-	setAttr ".phl[2]" 0;
-	setAttr ".phl[3]" 0;
-	setAttr ".phl[4]" 0;
-	setAttr ".phl[5]" 0;
-	setAttr ".phl[6]" 0;
-	setAttr ".phl[7]" 0;
-	setAttr ".phl[8]" 0;
-	setAttr ".phl[9]" 0;
-	setAttr ".phl[10]" 0;
-	setAttr ".phl[11]" 0;
-	setAttr ".phl[12]" 0;
-	setAttr ".phl[13]" 0;
-	setAttr ".phl[14]" 0;
-	setAttr ".phl[15]" 0;
-	setAttr ".phl[16]" 0;
-	setAttr ".phl[17]" 0;
-	setAttr ".phl[18]" 0;
-	setAttr ".phl[19]" 0;
-	setAttr ".phl[20]" 0;
-	setAttr ".phl[21]" 0;
-	setAttr ".phl[22]" 0;
-	setAttr ".phl[23]" 0;
-	setAttr ".phl[24]" 0;
-	setAttr ".phl[25]" 0;
-	setAttr ".phl[26]" 0;
-	setAttr ".phl[27]" 0;
-	setAttr ".phl[28]" 0;
-	setAttr ".phl[29]" 0;
-	setAttr ".phl[30]" 0;
-	setAttr ".phl[31]" 0;
-	setAttr ".phl[32]" 0;
-	setAttr ".phl[33]" 0;
-	setAttr ".phl[34]" 0;
-	setAttr ".phl[35]" 0;
-	setAttr ".phl[36]" 0;
-	setAttr ".phl[37]" 0;
-	setAttr ".phl[38]" 0;
-	setAttr ".phl[39]" 0;
-	setAttr ".phl[40]" 0;
-	setAttr ".phl[41]" 0;
-	setAttr ".phl[42]" 0;
-	setAttr ".phl[43]" 0;
-	setAttr ".phl[44]" 0;
-	setAttr ".phl[45]" 0;
-	setAttr ".phl[46]" 0;
-	setAttr ".phl[47]" 0;
-	setAttr ".phl[48]" 0;
-	setAttr ".phl[49]" 0;
-	setAttr ".phl[50]" 0;
-	setAttr ".phl[51]" 0;
-	setAttr ".phl[52]" 0;
-	setAttr ".phl[53]" 0;
-	setAttr ".phl[54]" 0;
-	setAttr ".phl[55]" 0;
-	setAttr ".phl[56]" 0;
-	setAttr ".phl[57]" 0;
-	setAttr ".phl[58]" 0;
-	setAttr ".phl[59]" 0;
-	setAttr ".phl[60]" 0;
-	setAttr ".phl[61]" 0;
-	setAttr ".phl[62]" 0;
-	setAttr ".phl[63]" 0;
-	setAttr ".phl[64]" 0;
-	setAttr ".phl[65]" 0;
-	setAttr ".phl[66]" 0;
-	setAttr ".phl[67]" 0;
-	setAttr ".phl[68]" 0;
-	setAttr ".phl[69]" 0;
-	setAttr ".phl[70]" 0;
-	setAttr ".phl[71]" 0;
-	setAttr ".phl[72]" 0;
-	setAttr ".phl[73]" 0;
-	setAttr ".phl[74]" 0;
-	setAttr ".phl[75]" 0;
-	setAttr ".phl[76]" 0;
-	setAttr ".phl[77]" 0;
-	setAttr ".phl[78]" 0;
-	setAttr ".phl[79]" 0;
-	setAttr ".phl[80]" 0;
-	setAttr ".phl[81]" 0;
-	setAttr ".phl[82]" 0;
-	setAttr ".phl[83]" 0;
-	setAttr ".phl[84]" 0;
-	setAttr ".phl[85]" 0;
-	setAttr ".phl[86]" 0;
-	setAttr ".phl[87]" 0;
-	setAttr ".phl[88]" 0;
-	setAttr ".phl[89]" 0;
-	setAttr ".phl[90]" 0;
-	setAttr ".phl[91]" 0;
-	setAttr ".phl[92]" 0;
-	setAttr ".phl[93]" 0;
-	setAttr ".phl[94]" 0;
-	setAttr ".phl[95]" 0;
-	setAttr ".phl[96]" 0;
-	setAttr ".phl[97]" 0;
-	setAttr ".phl[98]" 0;
-	setAttr ".phl[99]" 0;
-	setAttr ".phl[100]" 0;
-	setAttr ".phl[101]" 0;
-	setAttr ".phl[102]" 0;
-	setAttr ".phl[103]" 0;
-	setAttr ".phl[104]" 0;
-	setAttr ".phl[105]" 0;
-	setAttr ".phl[106]" 0;
-	setAttr ".phl[107]" 0;
-	setAttr ".phl[108]" 0;
-	setAttr ".phl[109]" 0;
-	setAttr ".phl[110]" 0;
-	setAttr ".phl[111]" 0;
-	setAttr ".phl[112]" 0;
-	setAttr ".phl[113]" 0;
-	setAttr ".phl[114]" 0;
-	setAttr ".phl[115]" 0;
-	setAttr ".phl[116]" 0;
-	setAttr ".phl[117]" 0;
-	setAttr ".phl[118]" 0;
-	setAttr ".phl[119]" 0;
-	setAttr ".phl[120]" 0;
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"Penguin1RN"
-		"Penguin1RN" 0
-		"Penguin1RN" 152
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl" 
-		"translate" " -type \"double3\" -140.28675750283957768 -2.91361698861059892 -314.65139920655275318"
-		
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl" 
-		"rotate" " -type \"double3\" 0 33.42604288082105057 0"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_04_Jnt_Ctrl_Grp|Penguin2:Spine_04_Jnt_Ctrl" 
-		"rotate" " -type \"double3\" 2.99836582524648465 -9.99902788135067233 0"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_04_Jnt_Ctrl_Grp|Penguin2:Spine_04_Jnt_Ctrl" 
-		"rotateX" " -av"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Neck_Jnt_Ctrl_Grp|Penguin2:Neck_Jnt_Ctrl" 
-		"rotate" " -type \"double3\" -2.05063465891652008 3.94704495791237564 0"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Neck_Jnt_Ctrl_Grp|Penguin2:Neck_Jnt_Ctrl" 
-		"rotateX" " -av"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Neck_Jnt_Ctrl_Grp|Penguin2:Neck_Jnt_Ctrl" 
-		"rotateY" " -av"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_01_Jnt_Ctrl_Grp|Penguin2:L_Wing_01_Jnt_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -59.21211009170880146"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_01_Jnt_Ctrl_Grp|Penguin2:L_Wing_01_Jnt_Ctrl" 
-		"rotateZ" " -av"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_02_Jnt_Ctrl_Grp|Penguin2:L_Wing_02_Jnt_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -0.87841287316744054"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_02_Jnt_Ctrl_Grp|Penguin2:L_Wing_02_Jnt_Ctrl" 
-		"rotateZ" " -av"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_03_Jnt_Ctrl_Grp|Penguin2:L_Wing_03_Jnt_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 0.77112497930836843"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_03_Jnt_Ctrl_Grp|Penguin2:L_Wing_03_Jnt_Ctrl" 
-		"rotateZ" " -av"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl" 
-		"visibility" " -av 1"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl" 
-		"translateX" " -av"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl" 
-		"translateY" " -av"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl" 
-		"translateZ" " -av"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -54.82692323452948102"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl" 
-		"rotateX" " -av"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl" 
-		"rotateY" " -av"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl" 
-		"rotateZ" " -av"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl" 
-		"scale" " -type \"double3\" 1 1 1"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl" 
-		"scaleX" " -av"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl" 
-		"scaleY" " -av"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl" 
-		"scaleZ" " -av"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl" 
-		"FollowTranslate" " -av -k 1 1"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl" 
-		"FollowRotate" " -av -k 1 1"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_02_Jnt_Ctrl_Grp|Penguin2:R_Wing_02_Jnt_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -3.31627599537812179"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_02_Jnt_Ctrl_Grp|Penguin2:R_Wing_02_Jnt_Ctrl" 
-		"rotateZ" " -av"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_03_Jnt_Ctrl_Grp|Penguin2:R_Wing_03_Jnt_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -1.08407914283882589"
-		2 "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_03_Jnt_Ctrl_Grp|Penguin2:R_Wing_03_Jnt_Ctrl" 
-		"rotateZ" " -av"
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:COG_Jnt_Ctrl_Grp|Penguin2:COG_Jnt_Ctrl.FollowTranslate" 
-		"Penguin1RN.placeHolderList[1]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:COG_Jnt_Ctrl_Grp|Penguin2:COG_Jnt_Ctrl.FollowRotate" 
-		"Penguin1RN.placeHolderList[2]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:COG_Jnt_Ctrl_Grp|Penguin2:COG_Jnt_Ctrl.translateX" 
-		"Penguin1RN.placeHolderList[3]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:COG_Jnt_Ctrl_Grp|Penguin2:COG_Jnt_Ctrl.translateZ" 
-		"Penguin1RN.placeHolderList[4]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:COG_Jnt_Ctrl_Grp|Penguin2:COG_Jnt_Ctrl.translateY" 
-		"Penguin1RN.placeHolderList[5]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:COG_Jnt_Ctrl_Grp|Penguin2:COG_Jnt_Ctrl.rotateX" 
-		"Penguin1RN.placeHolderList[6]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:COG_Jnt_Ctrl_Grp|Penguin2:COG_Jnt_Ctrl.rotateY" 
-		"Penguin1RN.placeHolderList[7]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:COG_Jnt_Ctrl_Grp|Penguin2:COG_Jnt_Ctrl.rotateZ" 
-		"Penguin1RN.placeHolderList[8]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:COG_Jnt_Ctrl_Grp|Penguin2:COG_Jnt_Ctrl.scaleX" 
-		"Penguin1RN.placeHolderList[9]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:COG_Jnt_Ctrl_Grp|Penguin2:COG_Jnt_Ctrl.scaleY" 
-		"Penguin1RN.placeHolderList[10]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:COG_Jnt_Ctrl_Grp|Penguin2:COG_Jnt_Ctrl.scaleZ" 
-		"Penguin1RN.placeHolderList[11]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:COG_Jnt_Ctrl_Grp|Penguin2:COG_Jnt_Ctrl.visibility" 
-		"Penguin1RN.placeHolderList[12]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_02_Jnt_Ctrl_Grp|Penguin2:Spine_02_Jnt_Ctrl.FollowTranslate" 
-		"Penguin1RN.placeHolderList[13]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_02_Jnt_Ctrl_Grp|Penguin2:Spine_02_Jnt_Ctrl.FollowRotate" 
-		"Penguin1RN.placeHolderList[14]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_02_Jnt_Ctrl_Grp|Penguin2:Spine_02_Jnt_Ctrl.translateX" 
-		"Penguin1RN.placeHolderList[15]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_02_Jnt_Ctrl_Grp|Penguin2:Spine_02_Jnt_Ctrl.translateY" 
-		"Penguin1RN.placeHolderList[16]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_02_Jnt_Ctrl_Grp|Penguin2:Spine_02_Jnt_Ctrl.translateZ" 
-		"Penguin1RN.placeHolderList[17]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_02_Jnt_Ctrl_Grp|Penguin2:Spine_02_Jnt_Ctrl.rotateX" 
-		"Penguin1RN.placeHolderList[18]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_02_Jnt_Ctrl_Grp|Penguin2:Spine_02_Jnt_Ctrl.rotateY" 
-		"Penguin1RN.placeHolderList[19]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_02_Jnt_Ctrl_Grp|Penguin2:Spine_02_Jnt_Ctrl.rotateZ" 
-		"Penguin1RN.placeHolderList[20]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_02_Jnt_Ctrl_Grp|Penguin2:Spine_02_Jnt_Ctrl.scaleX" 
-		"Penguin1RN.placeHolderList[21]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_02_Jnt_Ctrl_Grp|Penguin2:Spine_02_Jnt_Ctrl.scaleY" 
-		"Penguin1RN.placeHolderList[22]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_02_Jnt_Ctrl_Grp|Penguin2:Spine_02_Jnt_Ctrl.scaleZ" 
-		"Penguin1RN.placeHolderList[23]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_02_Jnt_Ctrl_Grp|Penguin2:Spine_02_Jnt_Ctrl.visibility" 
-		"Penguin1RN.placeHolderList[24]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_04_Jnt_Ctrl_Grp|Penguin2:Spine_04_Jnt_Ctrl.FollowTranslate" 
-		"Penguin1RN.placeHolderList[25]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_04_Jnt_Ctrl_Grp|Penguin2:Spine_04_Jnt_Ctrl.FollowRotate" 
-		"Penguin1RN.placeHolderList[26]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_04_Jnt_Ctrl_Grp|Penguin2:Spine_04_Jnt_Ctrl.translateX" 
-		"Penguin1RN.placeHolderList[27]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_04_Jnt_Ctrl_Grp|Penguin2:Spine_04_Jnt_Ctrl.translateY" 
-		"Penguin1RN.placeHolderList[28]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_04_Jnt_Ctrl_Grp|Penguin2:Spine_04_Jnt_Ctrl.translateZ" 
-		"Penguin1RN.placeHolderList[29]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_04_Jnt_Ctrl_Grp|Penguin2:Spine_04_Jnt_Ctrl.rotateX" 
-		"Penguin1RN.placeHolderList[30]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_04_Jnt_Ctrl_Grp|Penguin2:Spine_04_Jnt_Ctrl.rotateY" 
-		"Penguin1RN.placeHolderList[31]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_04_Jnt_Ctrl_Grp|Penguin2:Spine_04_Jnt_Ctrl.rotateZ" 
-		"Penguin1RN.placeHolderList[32]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_04_Jnt_Ctrl_Grp|Penguin2:Spine_04_Jnt_Ctrl.scaleX" 
-		"Penguin1RN.placeHolderList[33]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_04_Jnt_Ctrl_Grp|Penguin2:Spine_04_Jnt_Ctrl.scaleY" 
-		"Penguin1RN.placeHolderList[34]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_04_Jnt_Ctrl_Grp|Penguin2:Spine_04_Jnt_Ctrl.scaleZ" 
-		"Penguin1RN.placeHolderList[35]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Spine_04_Jnt_Ctrl_Grp|Penguin2:Spine_04_Jnt_Ctrl.visibility" 
-		"Penguin1RN.placeHolderList[36]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Neck_Jnt_Ctrl_Grp|Penguin2:Neck_Jnt_Ctrl.FollowTranslate" 
-		"Penguin1RN.placeHolderList[37]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Neck_Jnt_Ctrl_Grp|Penguin2:Neck_Jnt_Ctrl.FollowRotate" 
-		"Penguin1RN.placeHolderList[38]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Neck_Jnt_Ctrl_Grp|Penguin2:Neck_Jnt_Ctrl.translateX" 
-		"Penguin1RN.placeHolderList[39]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Neck_Jnt_Ctrl_Grp|Penguin2:Neck_Jnt_Ctrl.translateY" 
-		"Penguin1RN.placeHolderList[40]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Neck_Jnt_Ctrl_Grp|Penguin2:Neck_Jnt_Ctrl.translateZ" 
-		"Penguin1RN.placeHolderList[41]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Neck_Jnt_Ctrl_Grp|Penguin2:Neck_Jnt_Ctrl.rotateX" 
-		"Penguin1RN.placeHolderList[42]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Neck_Jnt_Ctrl_Grp|Penguin2:Neck_Jnt_Ctrl.rotateY" 
-		"Penguin1RN.placeHolderList[43]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Neck_Jnt_Ctrl_Grp|Penguin2:Neck_Jnt_Ctrl.rotateZ" 
-		"Penguin1RN.placeHolderList[44]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Neck_Jnt_Ctrl_Grp|Penguin2:Neck_Jnt_Ctrl.scaleX" 
-		"Penguin1RN.placeHolderList[45]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Neck_Jnt_Ctrl_Grp|Penguin2:Neck_Jnt_Ctrl.scaleY" 
-		"Penguin1RN.placeHolderList[46]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Neck_Jnt_Ctrl_Grp|Penguin2:Neck_Jnt_Ctrl.scaleZ" 
-		"Penguin1RN.placeHolderList[47]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:Neck_Jnt_Ctrl_Grp|Penguin2:Neck_Jnt_Ctrl.visibility" 
-		"Penguin1RN.placeHolderList[48]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_01_Jnt_Ctrl_Grp|Penguin2:L_Wing_01_Jnt_Ctrl.FollowTranslate" 
-		"Penguin1RN.placeHolderList[49]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_01_Jnt_Ctrl_Grp|Penguin2:L_Wing_01_Jnt_Ctrl.FollowRotate" 
-		"Penguin1RN.placeHolderList[50]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_01_Jnt_Ctrl_Grp|Penguin2:L_Wing_01_Jnt_Ctrl.translateX" 
-		"Penguin1RN.placeHolderList[51]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_01_Jnt_Ctrl_Grp|Penguin2:L_Wing_01_Jnt_Ctrl.translateY" 
-		"Penguin1RN.placeHolderList[52]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_01_Jnt_Ctrl_Grp|Penguin2:L_Wing_01_Jnt_Ctrl.translateZ" 
-		"Penguin1RN.placeHolderList[53]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_01_Jnt_Ctrl_Grp|Penguin2:L_Wing_01_Jnt_Ctrl.rotateX" 
-		"Penguin1RN.placeHolderList[54]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_01_Jnt_Ctrl_Grp|Penguin2:L_Wing_01_Jnt_Ctrl.rotateY" 
-		"Penguin1RN.placeHolderList[55]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_01_Jnt_Ctrl_Grp|Penguin2:L_Wing_01_Jnt_Ctrl.rotateZ" 
-		"Penguin1RN.placeHolderList[56]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_01_Jnt_Ctrl_Grp|Penguin2:L_Wing_01_Jnt_Ctrl.scaleX" 
-		"Penguin1RN.placeHolderList[57]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_01_Jnt_Ctrl_Grp|Penguin2:L_Wing_01_Jnt_Ctrl.scaleY" 
-		"Penguin1RN.placeHolderList[58]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_01_Jnt_Ctrl_Grp|Penguin2:L_Wing_01_Jnt_Ctrl.scaleZ" 
-		"Penguin1RN.placeHolderList[59]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_01_Jnt_Ctrl_Grp|Penguin2:L_Wing_01_Jnt_Ctrl.visibility" 
-		"Penguin1RN.placeHolderList[60]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_02_Jnt_Ctrl_Grp|Penguin2:L_Wing_02_Jnt_Ctrl.FollowTranslate" 
-		"Penguin1RN.placeHolderList[61]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_02_Jnt_Ctrl_Grp|Penguin2:L_Wing_02_Jnt_Ctrl.FollowRotate" 
-		"Penguin1RN.placeHolderList[62]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_02_Jnt_Ctrl_Grp|Penguin2:L_Wing_02_Jnt_Ctrl.translateX" 
-		"Penguin1RN.placeHolderList[63]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_02_Jnt_Ctrl_Grp|Penguin2:L_Wing_02_Jnt_Ctrl.translateY" 
-		"Penguin1RN.placeHolderList[64]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_02_Jnt_Ctrl_Grp|Penguin2:L_Wing_02_Jnt_Ctrl.translateZ" 
-		"Penguin1RN.placeHolderList[65]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_02_Jnt_Ctrl_Grp|Penguin2:L_Wing_02_Jnt_Ctrl.rotateX" 
-		"Penguin1RN.placeHolderList[66]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_02_Jnt_Ctrl_Grp|Penguin2:L_Wing_02_Jnt_Ctrl.rotateY" 
-		"Penguin1RN.placeHolderList[67]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_02_Jnt_Ctrl_Grp|Penguin2:L_Wing_02_Jnt_Ctrl.rotateZ" 
-		"Penguin1RN.placeHolderList[68]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_02_Jnt_Ctrl_Grp|Penguin2:L_Wing_02_Jnt_Ctrl.scaleX" 
-		"Penguin1RN.placeHolderList[69]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_02_Jnt_Ctrl_Grp|Penguin2:L_Wing_02_Jnt_Ctrl.scaleY" 
-		"Penguin1RN.placeHolderList[70]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_02_Jnt_Ctrl_Grp|Penguin2:L_Wing_02_Jnt_Ctrl.scaleZ" 
-		"Penguin1RN.placeHolderList[71]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_02_Jnt_Ctrl_Grp|Penguin2:L_Wing_02_Jnt_Ctrl.visibility" 
-		"Penguin1RN.placeHolderList[72]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_03_Jnt_Ctrl_Grp|Penguin2:L_Wing_03_Jnt_Ctrl.FollowTranslate" 
-		"Penguin1RN.placeHolderList[73]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_03_Jnt_Ctrl_Grp|Penguin2:L_Wing_03_Jnt_Ctrl.FollowRotate" 
-		"Penguin1RN.placeHolderList[74]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_03_Jnt_Ctrl_Grp|Penguin2:L_Wing_03_Jnt_Ctrl.translateX" 
-		"Penguin1RN.placeHolderList[75]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_03_Jnt_Ctrl_Grp|Penguin2:L_Wing_03_Jnt_Ctrl.translateY" 
-		"Penguin1RN.placeHolderList[76]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_03_Jnt_Ctrl_Grp|Penguin2:L_Wing_03_Jnt_Ctrl.translateZ" 
-		"Penguin1RN.placeHolderList[77]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_03_Jnt_Ctrl_Grp|Penguin2:L_Wing_03_Jnt_Ctrl.rotateX" 
-		"Penguin1RN.placeHolderList[78]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_03_Jnt_Ctrl_Grp|Penguin2:L_Wing_03_Jnt_Ctrl.rotateY" 
-		"Penguin1RN.placeHolderList[79]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_03_Jnt_Ctrl_Grp|Penguin2:L_Wing_03_Jnt_Ctrl.rotateZ" 
-		"Penguin1RN.placeHolderList[80]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_03_Jnt_Ctrl_Grp|Penguin2:L_Wing_03_Jnt_Ctrl.scaleX" 
-		"Penguin1RN.placeHolderList[81]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_03_Jnt_Ctrl_Grp|Penguin2:L_Wing_03_Jnt_Ctrl.scaleY" 
-		"Penguin1RN.placeHolderList[82]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_03_Jnt_Ctrl_Grp|Penguin2:L_Wing_03_Jnt_Ctrl.scaleZ" 
-		"Penguin1RN.placeHolderList[83]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:L_Wing_03_Jnt_Ctrl_Grp|Penguin2:L_Wing_03_Jnt_Ctrl.visibility" 
-		"Penguin1RN.placeHolderList[84]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl.FollowTranslate" 
-		"Penguin1RN.placeHolderList[85]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl.FollowRotate" 
-		"Penguin1RN.placeHolderList[86]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl.translateX" 
-		"Penguin1RN.placeHolderList[87]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl.translateY" 
-		"Penguin1RN.placeHolderList[88]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl.translateZ" 
-		"Penguin1RN.placeHolderList[89]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl.rotateX" 
-		"Penguin1RN.placeHolderList[90]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl.rotateY" 
-		"Penguin1RN.placeHolderList[91]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl.rotateZ" 
-		"Penguin1RN.placeHolderList[92]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl.scaleX" 
-		"Penguin1RN.placeHolderList[93]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl.scaleY" 
-		"Penguin1RN.placeHolderList[94]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl.scaleZ" 
-		"Penguin1RN.placeHolderList[95]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_01_Jnt_Ctrl_Grp|Penguin2:R_Wing_01_Jnt_Ctrl.visibility" 
-		"Penguin1RN.placeHolderList[96]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_02_Jnt_Ctrl_Grp|Penguin2:R_Wing_02_Jnt_Ctrl.FollowTranslate" 
-		"Penguin1RN.placeHolderList[97]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_02_Jnt_Ctrl_Grp|Penguin2:R_Wing_02_Jnt_Ctrl.FollowRotate" 
-		"Penguin1RN.placeHolderList[98]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_02_Jnt_Ctrl_Grp|Penguin2:R_Wing_02_Jnt_Ctrl.translateX" 
-		"Penguin1RN.placeHolderList[99]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_02_Jnt_Ctrl_Grp|Penguin2:R_Wing_02_Jnt_Ctrl.translateY" 
-		"Penguin1RN.placeHolderList[100]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_02_Jnt_Ctrl_Grp|Penguin2:R_Wing_02_Jnt_Ctrl.translateZ" 
-		"Penguin1RN.placeHolderList[101]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_02_Jnt_Ctrl_Grp|Penguin2:R_Wing_02_Jnt_Ctrl.rotateX" 
-		"Penguin1RN.placeHolderList[102]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_02_Jnt_Ctrl_Grp|Penguin2:R_Wing_02_Jnt_Ctrl.rotateY" 
-		"Penguin1RN.placeHolderList[103]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_02_Jnt_Ctrl_Grp|Penguin2:R_Wing_02_Jnt_Ctrl.rotateZ" 
-		"Penguin1RN.placeHolderList[104]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_02_Jnt_Ctrl_Grp|Penguin2:R_Wing_02_Jnt_Ctrl.scaleX" 
-		"Penguin1RN.placeHolderList[105]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_02_Jnt_Ctrl_Grp|Penguin2:R_Wing_02_Jnt_Ctrl.scaleY" 
-		"Penguin1RN.placeHolderList[106]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_02_Jnt_Ctrl_Grp|Penguin2:R_Wing_02_Jnt_Ctrl.scaleZ" 
-		"Penguin1RN.placeHolderList[107]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_02_Jnt_Ctrl_Grp|Penguin2:R_Wing_02_Jnt_Ctrl.visibility" 
-		"Penguin1RN.placeHolderList[108]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_03_Jnt_Ctrl_Grp|Penguin2:R_Wing_03_Jnt_Ctrl.FollowTranslate" 
-		"Penguin1RN.placeHolderList[109]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_03_Jnt_Ctrl_Grp|Penguin2:R_Wing_03_Jnt_Ctrl.FollowRotate" 
-		"Penguin1RN.placeHolderList[110]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_03_Jnt_Ctrl_Grp|Penguin2:R_Wing_03_Jnt_Ctrl.translateX" 
-		"Penguin1RN.placeHolderList[111]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_03_Jnt_Ctrl_Grp|Penguin2:R_Wing_03_Jnt_Ctrl.translateY" 
-		"Penguin1RN.placeHolderList[112]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_03_Jnt_Ctrl_Grp|Penguin2:R_Wing_03_Jnt_Ctrl.translateZ" 
-		"Penguin1RN.placeHolderList[113]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_03_Jnt_Ctrl_Grp|Penguin2:R_Wing_03_Jnt_Ctrl.rotateX" 
-		"Penguin1RN.placeHolderList[114]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_03_Jnt_Ctrl_Grp|Penguin2:R_Wing_03_Jnt_Ctrl.rotateY" 
-		"Penguin1RN.placeHolderList[115]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_03_Jnt_Ctrl_Grp|Penguin2:R_Wing_03_Jnt_Ctrl.rotateZ" 
-		"Penguin1RN.placeHolderList[116]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_03_Jnt_Ctrl_Grp|Penguin2:R_Wing_03_Jnt_Ctrl.scaleX" 
-		"Penguin1RN.placeHolderList[117]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_03_Jnt_Ctrl_Grp|Penguin2:R_Wing_03_Jnt_Ctrl.scaleY" 
-		"Penguin1RN.placeHolderList[118]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_03_Jnt_Ctrl_Grp|Penguin2:R_Wing_03_Jnt_Ctrl.scaleZ" 
-		"Penguin1RN.placeHolderList[119]" ""
-		5 4 "Penguin1RN" "|Penguin2:Penguin|Penguin2:Controls|Penguin2:Transform_Ctrl_Grp|Penguin2:Transform_Ctrl|Penguin2:RK|Penguin2:R_Wing_03_Jnt_Ctrl_Grp|Penguin2:R_Wing_03_Jnt_Ctrl.visibility" 
-		"Penguin1RN.placeHolderList[120]" "";
-lockNode -l 1 ;
 createNode lambert -n "Penguin_Texture";
 	rename -uid "BE694079-4439-5756-03F4-63AAEAB6CFE6";
 createNode shadingEngine -n "lambert3SG";
@@ -34329,2896 +33892,6 @@ createNode animCurveTU -n "Neck_Jnt_Ctrl_FollowRotate3";
 		 0 1 9 1 16 1 27 1 30 1;
 	setAttr -s 10 ".kit[9]"  18;
 	setAttr -s 10 ".kot[9]"  18;
-createNode reference -n "PenguinRN2";
-	rename -uid "23435997-4871-5810-56EA-E79107969A12";
-	setAttr -s 96 ".phl";
-	setAttr ".phl[1]" 0;
-	setAttr ".phl[2]" 0;
-	setAttr ".phl[3]" 0;
-	setAttr ".phl[4]" 0;
-	setAttr ".phl[5]" 0;
-	setAttr ".phl[6]" 0;
-	setAttr ".phl[7]" 0;
-	setAttr ".phl[8]" 0;
-	setAttr ".phl[9]" 0;
-	setAttr ".phl[10]" 0;
-	setAttr ".phl[11]" 0;
-	setAttr ".phl[12]" 0;
-	setAttr ".phl[13]" 0;
-	setAttr ".phl[14]" 0;
-	setAttr ".phl[15]" 0;
-	setAttr ".phl[16]" 0;
-	setAttr ".phl[17]" 0;
-	setAttr ".phl[18]" 0;
-	setAttr ".phl[19]" 0;
-	setAttr ".phl[20]" 0;
-	setAttr ".phl[21]" 0;
-	setAttr ".phl[22]" 0;
-	setAttr ".phl[23]" 0;
-	setAttr ".phl[24]" 0;
-	setAttr ".phl[25]" 0;
-	setAttr ".phl[26]" 0;
-	setAttr ".phl[27]" 0;
-	setAttr ".phl[28]" 0;
-	setAttr ".phl[29]" 0;
-	setAttr ".phl[30]" 0;
-	setAttr ".phl[31]" 0;
-	setAttr ".phl[32]" 0;
-	setAttr ".phl[33]" 0;
-	setAttr ".phl[34]" 0;
-	setAttr ".phl[35]" 0;
-	setAttr ".phl[36]" 0;
-	setAttr ".phl[37]" 0;
-	setAttr ".phl[38]" 0;
-	setAttr ".phl[39]" 0;
-	setAttr ".phl[40]" 0;
-	setAttr ".phl[41]" 0;
-	setAttr ".phl[42]" 0;
-	setAttr ".phl[43]" 0;
-	setAttr ".phl[44]" 0;
-	setAttr ".phl[45]" 0;
-	setAttr ".phl[46]" 0;
-	setAttr ".phl[47]" 0;
-	setAttr ".phl[48]" 0;
-	setAttr ".phl[49]" 0;
-	setAttr ".phl[50]" 0;
-	setAttr ".phl[51]" 0;
-	setAttr ".phl[52]" 0;
-	setAttr ".phl[53]" 0;
-	setAttr ".phl[54]" 0;
-	setAttr ".phl[55]" 0;
-	setAttr ".phl[56]" 0;
-	setAttr ".phl[57]" 0;
-	setAttr ".phl[58]" 0;
-	setAttr ".phl[59]" 0;
-	setAttr ".phl[60]" 0;
-	setAttr ".phl[61]" 0;
-	setAttr ".phl[62]" 0;
-	setAttr ".phl[63]" 0;
-	setAttr ".phl[64]" 0;
-	setAttr ".phl[65]" 0;
-	setAttr ".phl[66]" 0;
-	setAttr ".phl[67]" 0;
-	setAttr ".phl[68]" 0;
-	setAttr ".phl[69]" 0;
-	setAttr ".phl[70]" 0;
-	setAttr ".phl[71]" 0;
-	setAttr ".phl[72]" 0;
-	setAttr ".phl[73]" 0;
-	setAttr ".phl[74]" 0;
-	setAttr ".phl[75]" 0;
-	setAttr ".phl[76]" 0;
-	setAttr ".phl[77]" 0;
-	setAttr ".phl[78]" 0;
-	setAttr ".phl[79]" 0;
-	setAttr ".phl[80]" 0;
-	setAttr ".phl[81]" 0;
-	setAttr ".phl[82]" 0;
-	setAttr ".phl[83]" 0;
-	setAttr ".phl[84]" 0;
-	setAttr ".phl[85]" 0;
-	setAttr ".phl[86]" 0;
-	setAttr ".phl[87]" 0;
-	setAttr ".phl[88]" 0;
-	setAttr ".phl[89]" 0;
-	setAttr ".phl[90]" 0;
-	setAttr ".phl[91]" 0;
-	setAttr ".phl[92]" 0;
-	setAttr ".phl[93]" 0;
-	setAttr ".phl[94]" 0;
-	setAttr ".phl[95]" 0;
-	setAttr ".phl[96]" 0;
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"PenguinRN2"
-		"PenguinRN2" 0
-		"PenguinRN2" 1362
-		2 "|Penguin3:Penguin" "translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Geometry" "translate" " -type \"double3\" 0 0 0"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton" "translate" " -type \"double3\" 0 0 0"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt" "translate" " -type \"double3\" 319.94590605130855465 -16.91386699676513672 -810.28930470961586252"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt" "translateX" " -av"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt" "translateY" " -av"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt" "translateZ" " -av"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt" 
-		"translate" " -type \"double3\" 10.41118737046188159 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt" 
-		"translate" " -type \"double3\" 10.3330159390329932 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_04_Jnt" 
-		"translate" " -type \"double3\" 7.90525784887005578 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_04_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_04_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_04_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_04_Jnt|Penguin3:Neck_Jnt" 
-		"translate" " -type \"double3\" 6.09550551724986178 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_04_Jnt|Penguin3:Neck_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_04_Jnt|Penguin3:Neck_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_04_Jnt|Penguin3:Neck_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_04_Jnt|Penguin3:Neck_Jnt|Penguin3:Neck_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_04_Jnt|Penguin3:Neck_Jnt|Penguin3:Neck_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_04_Jnt|Penguin3:Neck_Jnt|Penguin3:Neck_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_04_Jnt|Penguin3:Neck_Jnt|Penguin3:Neck_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_04_Jnt|Penguin3:Neck_Jnt|Penguin3:Neck_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_04_Jnt|Penguin3:Neck_Jnt|Penguin3:Neck_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_04_Jnt|Penguin3:Neck_Jnt|Penguin3:Neck_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_04_Jnt|Penguin3:Neck_Jnt|Penguin3:Neck_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_04_Jnt|Penguin3:Spine_04_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_04_Jnt|Penguin3:Spine_04_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_04_Jnt|Penguin3:Spine_04_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_04_Jnt|Penguin3:Spine_04_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_04_Jnt|Penguin3:Spine_04_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_04_Jnt|Penguin3:Spine_04_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_04_Jnt|Penguin3:Spine_04_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_04_Jnt|Penguin3:Spine_04_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt" 
-		"translate" " -type \"double3\" -1.43991342599142591 -0.61967162504606677 12.28518772125232772"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_02_Jnt" 
-		"translate" " -type \"double3\" 13.46208759257012133 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_02_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_02_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_02_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_02_Jnt|Penguin3:L_Wing_03_Jnt" 
-		"translate" " -type \"double3\" 16.81908282719818004 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_02_Jnt|Penguin3:L_Wing_03_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_02_Jnt|Penguin3:L_Wing_03_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_02_Jnt|Penguin3:L_Wing_03_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_02_Jnt|Penguin3:L_Wing_03_Jnt|Penguin3:L_Wing_03_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_02_Jnt|Penguin3:L_Wing_03_Jnt|Penguin3:L_Wing_03_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_02_Jnt|Penguin3:L_Wing_03_Jnt|Penguin3:L_Wing_03_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_02_Jnt|Penguin3:L_Wing_03_Jnt|Penguin3:L_Wing_03_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_02_Jnt|Penguin3:L_Wing_03_Jnt|Penguin3:L_Wing_03_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_02_Jnt|Penguin3:L_Wing_03_Jnt|Penguin3:L_Wing_03_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_02_Jnt|Penguin3:L_Wing_03_Jnt|Penguin3:L_Wing_03_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_02_Jnt|Penguin3:L_Wing_03_Jnt|Penguin3:L_Wing_03_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_02_Jnt|Penguin3:L_Wing_02_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_02_Jnt|Penguin3:L_Wing_02_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_02_Jnt|Penguin3:L_Wing_02_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_02_Jnt|Penguin3:L_Wing_02_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_02_Jnt|Penguin3:L_Wing_02_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_02_Jnt|Penguin3:L_Wing_02_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_02_Jnt|Penguin3:L_Wing_02_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_02_Jnt|Penguin3:L_Wing_02_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_01_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_01_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_01_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_01_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_01_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_01_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_01_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:L_Wing_01_Jnt|Penguin3:L_Wing_01_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt" 
-		"translate" " -type \"double3\" -1.43991194268704525 -0.61967202283346978 -12.28519999999980428"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_02_Jnt" 
-		"translate" " -type \"double3\" 13.46208145031135928 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_02_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_02_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_02_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_02_Jnt|Penguin3:R_Wing_03_Jnt" 
-		"translate" " -type \"double3\" 16.81909963290667065 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_02_Jnt|Penguin3:R_Wing_03_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_02_Jnt|Penguin3:R_Wing_03_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_02_Jnt|Penguin3:R_Wing_03_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_02_Jnt|Penguin3:R_Wing_03_Jnt|Penguin3:R_Wing_03_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_02_Jnt|Penguin3:R_Wing_03_Jnt|Penguin3:R_Wing_03_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_02_Jnt|Penguin3:R_Wing_03_Jnt|Penguin3:R_Wing_03_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_02_Jnt|Penguin3:R_Wing_03_Jnt|Penguin3:R_Wing_03_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_02_Jnt|Penguin3:R_Wing_03_Jnt|Penguin3:R_Wing_03_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_02_Jnt|Penguin3:R_Wing_03_Jnt|Penguin3:R_Wing_03_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_02_Jnt|Penguin3:R_Wing_03_Jnt|Penguin3:R_Wing_03_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_02_Jnt|Penguin3:R_Wing_03_Jnt|Penguin3:R_Wing_03_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_02_Jnt|Penguin3:R_Wing_02_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_02_Jnt|Penguin3:R_Wing_02_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_02_Jnt|Penguin3:R_Wing_02_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_02_Jnt|Penguin3:R_Wing_02_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_02_Jnt|Penguin3:R_Wing_02_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_02_Jnt|Penguin3:R_Wing_02_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_02_Jnt|Penguin3:R_Wing_02_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_02_Jnt|Penguin3:R_Wing_02_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_01_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_01_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_01_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_01_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_01_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_01_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_01_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:R_Wing_01_Jnt|Penguin3:R_Wing_01_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_03_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_03_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_03_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_03_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_03_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_03_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_03_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_03_Jnt|Penguin3:Spine_03_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_02_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_02_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_02_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_02_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_02_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_02_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_02_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_02_Jnt|Penguin3:Spine_02_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_01_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_01_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_01_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_01_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_01_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_01_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_01_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Spine_01_Jnt|Penguin3:Spine_01_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Tail_01_Jnt" 
-		"translate" " -type \"double3\" 23.69875828873597357 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Tail_01_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Tail_01_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Tail_01_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Tail_01_Jnt|Penguin3:Tail_02_Jnt" 
-		"translate" " -type \"double3\" 6.54459499889009066 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Tail_01_Jnt|Penguin3:Tail_02_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Tail_01_Jnt|Penguin3:Tail_02_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Tail_01_Jnt|Penguin3:Tail_02_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Tail_01_Jnt|Penguin3:Tail_02_Jnt|Penguin3:Tail_02_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Tail_01_Jnt|Penguin3:Tail_02_Jnt|Penguin3:Tail_02_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Tail_01_Jnt|Penguin3:Tail_02_Jnt|Penguin3:Tail_02_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Tail_01_Jnt|Penguin3:Tail_02_Jnt|Penguin3:Tail_02_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Tail_01_Jnt|Penguin3:Tail_02_Jnt|Penguin3:Tail_02_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Tail_01_Jnt|Penguin3:Tail_02_Jnt|Penguin3:Tail_02_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Tail_01_Jnt|Penguin3:Tail_02_Jnt|Penguin3:Tail_02_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Tail_01_Jnt|Penguin3:Tail_02_Jnt|Penguin3:Tail_02_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Tail_01_Jnt|Penguin3:Tail_01_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Tail_01_Jnt|Penguin3:Tail_01_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Tail_01_Jnt|Penguin3:Tail_01_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Tail_01_Jnt|Penguin3:Tail_01_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Tail_01_Jnt|Penguin3:Tail_01_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Tail_01_Jnt|Penguin3:Tail_01_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Tail_01_Jnt|Penguin3:Tail_01_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Tail_01_Jnt|Penguin3:Tail_01_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt" 
-		"translate" " -type \"double3\" 5.41098773165634839 2.77339680089869489 -6.25768852233886719"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt" 
-		"translate" " -type \"double3\" 15.4110199629939757 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt" 
-		"translate" " -type \"double3\" 6.37675784278038549 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_01_RK_Jnt" 
-		"translate" " -type \"double3\" 6.83966461702584638 -0.029613861900259053 2.97094885311548751"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_01_RK_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_01_RK_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_01_RK_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_01_RK_Jnt|Penguin3:L_Toe_01_RK_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_01_RK_Jnt|Penguin3:L_Toe_01_RK_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_01_RK_Jnt|Penguin3:L_Toe_01_RK_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_01_RK_Jnt|Penguin3:L_Toe_01_RK_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_01_RK_Jnt|Penguin3:L_Toe_01_RK_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_01_RK_Jnt|Penguin3:L_Toe_01_RK_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_01_RK_Jnt|Penguin3:L_Toe_01_RK_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_01_RK_Jnt|Penguin3:L_Toe_01_RK_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_02_RK_Jnt" 
-		"translate" " -type \"double3\" 7.05128970375130848 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_02_RK_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_02_RK_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_02_RK_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_02_RK_Jnt|Penguin3:L_Toe_02_RK_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_02_RK_Jnt|Penguin3:L_Toe_02_RK_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_02_RK_Jnt|Penguin3:L_Toe_02_RK_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_02_RK_Jnt|Penguin3:L_Toe_02_RK_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_02_RK_Jnt|Penguin3:L_Toe_02_RK_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_02_RK_Jnt|Penguin3:L_Toe_02_RK_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_02_RK_Jnt|Penguin3:L_Toe_02_RK_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_02_RK_Jnt|Penguin3:L_Toe_02_RK_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_03_RK_Jnt" 
-		"translate" " -type \"double3\" 6.64142653859300935 -0.4110018186569846 -2.62301120865129178"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_03_RK_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_03_RK_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_03_RK_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_03_RK_Jnt|Penguin3:L_Toe_03_RK_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_03_RK_Jnt|Penguin3:L_Toe_03_RK_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_03_RK_Jnt|Penguin3:L_Toe_03_RK_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_03_RK_Jnt|Penguin3:L_Toe_03_RK_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_03_RK_Jnt|Penguin3:L_Toe_03_RK_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_03_RK_Jnt|Penguin3:L_Toe_03_RK_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_03_RK_Jnt|Penguin3:L_Toe_03_RK_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Toe_03_RK_Jnt|Penguin3:L_Toe_03_RK_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Ankle_RK_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Ankle_RK_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Ankle_RK_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Ankle_RK_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Ankle_RK_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Ankle_RK_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Ankle_RK_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Ankle_RK_Jnt|Penguin3:L_Ankle_RK_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Leg_RK_03_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Leg_RK_03_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Leg_RK_03_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Leg_RK_03_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Leg_RK_03_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Leg_RK_03_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Leg_RK_03_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_03_Jnt|Penguin3:L_Leg_RK_03_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_02_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_02_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_02_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_02_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_02_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_02_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_02_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_02_Jnt|Penguin3:L_Leg_RK_02_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_01_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_01_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_01_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_01_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_01_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_01_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_01_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:L_Leg_RK_01_Jnt|Penguin3:L_Leg_RK_01_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt" 
-		"translate" " -type \"double3\" 5.41099497579676836 2.77339973031143927 6.05228996276855469"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt" 
-		"rotate" " -type \"double3\" -6.8739375269653135e-10 -4.3304732315012817e-10 -3.8601512323498134e-09"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt" 
-		"rotateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt" 
-		"rotateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt" 
-		"rotateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt" 
-		"segmentScaleCompensate" " 1"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt" 
-		"translate" " -type \"double3\" 15.41238436856045269 -1.0350049706175923e-09 1.1493739293655381e-10"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt" 
-		"rotate" " -type \"double3\" -4.1309946189994409e-10 -2.1040379910304235e-10 9.3515715563093498e-09"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt" 
-		"rotateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt" 
-		"rotateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt" 
-		"rotateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt" 
-		"segmentScaleCompensate" " 1"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt" 
-		"translate" " -type \"double3\" 6.38001345416248 1.0415988072054461e-09 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt" 
-		"translate" " -type \"double3\" -5.6019757721514907e-09 -4.3644377001328394e-10 0"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt" 
-		"rotate" " -type \"double3\" 1.6059853050502086e-09 -1.4315225381357839e-09 9.1758233387598708e-09"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt" 
-		"rotateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt" 
-		"rotateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt" 
-		"rotateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt" 
-		"segmentScaleCompensate" " 1"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_01_RK_Jnt" 
-		"translate" " -type \"double3\" 6.75841423268343533 0.1933175773739606 -2.95737906309489063"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_01_RK_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_01_RK_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_01_RK_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_01_RK_Jnt|Penguin3:R_Toe_01_RK_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_01_RK_Jnt|Penguin3:R_Toe_01_RK_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_01_RK_Jnt|Penguin3:R_Toe_01_RK_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_01_RK_Jnt|Penguin3:R_Toe_01_RK_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_01_RK_Jnt|Penguin3:R_Toe_01_RK_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_01_RK_Jnt|Penguin3:R_Toe_01_RK_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_01_RK_Jnt|Penguin3:R_Toe_01_RK_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_01_RK_Jnt|Penguin3:R_Toe_01_RK_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_02_RK_Jnt" 
-		"translate" " -type \"double3\" 7.05632413350735987 0 -3.2957814255496487e-10"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_02_RK_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_02_RK_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_02_RK_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_02_RK_Jnt|Penguin3:R_Toe_02_RK_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_02_RK_Jnt|Penguin3:R_Toe_02_RK_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_02_RK_Jnt|Penguin3:R_Toe_02_RK_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_02_RK_Jnt|Penguin3:R_Toe_02_RK_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_02_RK_Jnt|Penguin3:R_Toe_02_RK_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_02_RK_Jnt|Penguin3:R_Toe_02_RK_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_02_RK_Jnt|Penguin3:R_Toe_02_RK_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_02_RK_Jnt|Penguin3:R_Toe_02_RK_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_03_RK_Jnt" 
-		"translate" " -type \"double3\" 6.72327043190148288 -0.60833707570438378 2.5953971320045639"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_03_RK_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_03_RK_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_03_RK_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_03_RK_Jnt|Penguin3:R_Toe_03_RK_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_03_RK_Jnt|Penguin3:R_Toe_03_RK_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_03_RK_Jnt|Penguin3:R_Toe_03_RK_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_03_RK_Jnt|Penguin3:R_Toe_03_RK_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_03_RK_Jnt|Penguin3:R_Toe_03_RK_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_03_RK_Jnt|Penguin3:R_Toe_03_RK_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_03_RK_Jnt|Penguin3:R_Toe_03_RK_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Toe_03_RK_Jnt|Penguin3:R_Toe_03_RK_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Ankle_RK_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Ankle_RK_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Ankle_RK_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Ankle_RK_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Ankle_RK_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Ankle_RK_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Ankle_RK_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Ankle_RK_Jnt|Penguin3:R_Ankle_RK_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Leg_RK_03_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Leg_RK_03_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Leg_RK_03_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Leg_RK_03_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Leg_RK_03_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Leg_RK_03_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Leg_RK_03_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_03_Jnt|Penguin3:R_Leg_RK_03_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_02_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_02_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_02_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_02_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_02_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_02_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_02_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_02_Jnt|Penguin3:R_Leg_RK_02_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_01_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_01_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_01_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_01_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_01_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_01_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_01_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:R_Leg_RK_01_Jnt|Penguin3:R_Leg_RK_01_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Hip_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Hip_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Hip_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Hip_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Hip_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Hip_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Hip_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:Hip_Jnt|Penguin3:Hip_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:COG_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:COG_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:COG_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:COG_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:COG_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:COG_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:COG_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:COG_Jnt|Penguin3:COG_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK" "translate" " -type \"double3\" 0 0 0"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt" 
-		"translate" " -type \"double3\" 325.95419375873825629 -22.9794921875 -812.08870837757183381"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt" 
-		"translate" " -type \"double3\" 15.41101996299408938 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt" 
-		"translate" " -type \"double3\" 6.37675784278035707 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_01_FK_Jnt" 
-		"translate" " -type \"double3\" 6.83966461702618744 -0.029613861900259053 2.97094885311526014"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_01_FK_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_01_FK_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_01_FK_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_01_FK_Jnt|Penguin3:L_Toe_01_FK_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_01_FK_Jnt|Penguin3:L_Toe_01_FK_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_01_FK_Jnt|Penguin3:L_Toe_01_FK_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_01_FK_Jnt|Penguin3:L_Toe_01_FK_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_01_FK_Jnt|Penguin3:L_Toe_01_FK_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_01_FK_Jnt|Penguin3:L_Toe_01_FK_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_01_FK_Jnt|Penguin3:L_Toe_01_FK_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_01_FK_Jnt|Penguin3:L_Toe_01_FK_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_02_FK_Jnt" 
-		"translate" " -type \"double3\" 7.05128970375153585 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_02_FK_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_02_FK_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_02_FK_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_02_FK_Jnt|Penguin3:L_Toe_02_FK_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_02_FK_Jnt|Penguin3:L_Toe_02_FK_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_02_FK_Jnt|Penguin3:L_Toe_02_FK_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_02_FK_Jnt|Penguin3:L_Toe_02_FK_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_02_FK_Jnt|Penguin3:L_Toe_02_FK_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_02_FK_Jnt|Penguin3:L_Toe_02_FK_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_02_FK_Jnt|Penguin3:L_Toe_02_FK_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_02_FK_Jnt|Penguin3:L_Toe_02_FK_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_03_FK_Jnt" 
-		"translate" " -type \"double3\" 6.64142653859312304 -0.41100181865704144 -2.62301120865129178"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_03_FK_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_03_FK_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_03_FK_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_03_FK_Jnt|Penguin3:L_Toe_03_FK_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_03_FK_Jnt|Penguin3:L_Toe_03_FK_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_03_FK_Jnt|Penguin3:L_Toe_03_FK_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_03_FK_Jnt|Penguin3:L_Toe_03_FK_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_03_FK_Jnt|Penguin3:L_Toe_03_FK_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_03_FK_Jnt|Penguin3:L_Toe_03_FK_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_03_FK_Jnt|Penguin3:L_Toe_03_FK_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Toe_03_FK_Jnt|Penguin3:L_Toe_03_FK_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Ankle_FK_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Ankle_FK_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Ankle_FK_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Ankle_FK_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Ankle_FK_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Ankle_FK_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Ankle_FK_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Ankle_FK_Jnt|Penguin3:L_Ankle_FK_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Leg_FK_03_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Leg_FK_03_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Leg_FK_03_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Leg_FK_03_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Leg_FK_03_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Leg_FK_03_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Leg_FK_03_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_03_Jnt|Penguin3:L_Leg_FK_03_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_02_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_02_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_02_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_02_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_02_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_02_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_02_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_02_Jnt|Penguin3:L_Leg_FK_02_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_01_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_01_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_01_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_01_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_01_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_01_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_01_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt|Penguin3:L_Leg_FK_01_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt" 
-		"translate" " -type \"double3\" 314.42656799540588963 -22.97949999999999449 -807.77021158304205528"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt" 
-		"translate" " -type \"double3\" 15.4123843686756743 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt" 
-		"translate" " -type \"double3\" 6.38001345416250842 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt" 
-		"translate" " -type \"double3\" 0 0 3.3173819247167557e-10"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_01_FK_Jnt" 
-		"translate" " -type \"double3\" 6.75841423268320796 0.19331757737390376 -2.957379063095118"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_01_FK_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_01_FK_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_01_FK_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_01_FK_Jnt|Penguin3:R_Toe_01_FK_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_01_FK_Jnt|Penguin3:R_Toe_01_FK_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_01_FK_Jnt|Penguin3:R_Toe_01_FK_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_01_FK_Jnt|Penguin3:R_Toe_01_FK_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_01_FK_Jnt|Penguin3:R_Toe_01_FK_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_01_FK_Jnt|Penguin3:R_Toe_01_FK_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_01_FK_Jnt|Penguin3:R_Toe_01_FK_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_01_FK_Jnt|Penguin3:R_Toe_01_FK_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_02_FK_Jnt" 
-		"translate" " -type \"double3\" 7.05632413350735987 0 -3.2991920306812972e-10"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_02_FK_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_02_FK_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_02_FK_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_02_FK_Jnt|Penguin3:R_Toe_02_FK_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_02_FK_Jnt|Penguin3:R_Toe_02_FK_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_02_FK_Jnt|Penguin3:R_Toe_02_FK_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_02_FK_Jnt|Penguin3:R_Toe_02_FK_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_02_FK_Jnt|Penguin3:R_Toe_02_FK_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_02_FK_Jnt|Penguin3:R_Toe_02_FK_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_02_FK_Jnt|Penguin3:R_Toe_02_FK_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_02_FK_Jnt|Penguin3:R_Toe_02_FK_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_03_Fk_Jnt" 
-		"translate" " -type \"double3\" 6.72327043190136919 -0.6083370757044122 2.59539713200433653"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_03_Fk_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_03_Fk_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_03_Fk_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_03_Fk_Jnt|Penguin3:R_Toe_03_Fk_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_03_Fk_Jnt|Penguin3:R_Toe_03_Fk_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_03_Fk_Jnt|Penguin3:R_Toe_03_Fk_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_03_Fk_Jnt|Penguin3:R_Toe_03_Fk_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_03_Fk_Jnt|Penguin3:R_Toe_03_Fk_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_03_Fk_Jnt|Penguin3:R_Toe_03_Fk_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_03_Fk_Jnt|Penguin3:R_Toe_03_Fk_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Toe_03_Fk_Jnt|Penguin3:R_Toe_03_Fk_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Ankle_FK_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Ankle_FK_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Ankle_FK_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Ankle_FK_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Ankle_FK_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Ankle_FK_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Ankle_FK_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Ankle_FK_Jnt|Penguin3:R_Ankle_FK_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Leg_FK_03_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Leg_FK_03_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Leg_FK_03_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Leg_FK_03_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Leg_FK_03_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Leg_FK_03_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Leg_FK_03_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_03_Jnt|Penguin3:R_Leg_FK_03_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_02_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_02_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_02_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_02_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_02_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_02_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_02_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_02_Jnt|Penguin3:R_Leg_FK_02_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_01_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_01_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_01_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_01_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_01_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_01_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_01_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt|Penguin3:R_Leg_FK_01_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK" "translate" " -type \"double3\" 0 0 0"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt" 
-		"translate" " -type \"double3\" 325.95419375873825629 -22.9794921875 -812.08870837757183381"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt" 
-		"rotate" " -type \"double3\" -19.95184045381921578 4.96999259862605491 -0.87472182358508177"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt" 
-		"rotateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt" 
-		"rotateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt" 
-		"rotateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt" 
-		"segmentScaleCompensate" " 1"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt" 
-		"translate" " -type \"double3\" 15.41101996299406629 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt" 
-		"rotate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt" 
-		"segmentScaleCompensate" " 1"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt" 
-		"translate" " -type \"double3\" 6.37675784278039526 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt" 
-		"rotate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt" 
-		"rotateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt" 
-		"rotateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt" 
-		"rotateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt" 
-		"segmentScaleCompensate" " 1"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_01_IK_Jnt" 
-		"translate" " -type \"double3\" 6.83966461702596007 -0.029613861900315896 2.97094885311537382"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_01_IK_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_01_IK_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_01_IK_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_01_IK_Jnt|Penguin3:L_Toe_01_IK_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_01_IK_Jnt|Penguin3:L_Toe_01_IK_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_01_IK_Jnt|Penguin3:L_Toe_01_IK_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_01_IK_Jnt|Penguin3:L_Toe_01_IK_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_01_IK_Jnt|Penguin3:L_Toe_01_IK_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_01_IK_Jnt|Penguin3:L_Toe_01_IK_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_01_IK_Jnt|Penguin3:L_Toe_01_IK_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_01_IK_Jnt|Penguin3:L_Toe_01_IK_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_02_IK_Jnt" 
-		"translate" " -type \"double3\" 7.05128970375130848 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_02_IK_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_02_IK_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_02_IK_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_02_IK_Jnt|Penguin3:L_Toe_02_IK_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_02_IK_Jnt|Penguin3:L_Toe_02_IK_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_02_IK_Jnt|Penguin3:L_Toe_02_IK_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_02_IK_Jnt|Penguin3:L_Toe_02_IK_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_02_IK_Jnt|Penguin3:L_Toe_02_IK_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_02_IK_Jnt|Penguin3:L_Toe_02_IK_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_02_IK_Jnt|Penguin3:L_Toe_02_IK_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_02_IK_Jnt|Penguin3:L_Toe_02_IK_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_03_IK_Jnt" 
-		"translate" " -type \"double3\" 6.64142653859300935 -0.41100181865704144 -2.62301120865140547"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_03_IK_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_03_IK_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_03_IK_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_03_IK_Jnt|Penguin3:L_Toe_03_IK_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_03_IK_Jnt|Penguin3:L_Toe_03_IK_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_03_IK_Jnt|Penguin3:L_Toe_03_IK_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_03_IK_Jnt|Penguin3:L_Toe_03_IK_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_03_IK_Jnt|Penguin3:L_Toe_03_IK_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_03_IK_Jnt|Penguin3:L_Toe_03_IK_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_03_IK_Jnt|Penguin3:L_Toe_03_IK_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Toe_03_IK_Jnt|Penguin3:L_Toe_03_IK_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Ankle_IK_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Ankle_IK_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Ankle_IK_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Ankle_IK_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Ankle_IK_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Ankle_IK_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Ankle_IK_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_02_Jnt|Penguin3:L_Leg_IK_03_Jnt|Penguin3:L_Ankle_IK_Jnt|Penguin3:L_Ankle_IK_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_01_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_01_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_01_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt|Penguin3:L_Leg_IK_01_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt" 
-		"translate" " -type \"double3\" 314.42656799540588963 -22.97950000000000514 -807.77021158304205528"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt" 
-		"rotate" " -type \"double3\" -111.53241773833534012 4.33926089960176409 -0.76827512273979692"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt" 
-		"rotateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt" 
-		"rotateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt" 
-		"rotateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt" 
-		"segmentScaleCompensate" " 1"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt" 
-		"translate" " -type \"double3\" 15.40304427901946838 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt" 
-		"rotate" " -type \"double3\" 0 0.0028623029166764936 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt" 
-		"segmentScaleCompensate" " 1"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt" 
-		"translate" " -type \"double3\" 6.35741714919927148 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt" 
-		"rotate" " -type \"double3\" -1.6060115448555861e-09 1.4315167731232257e-09 -9.1758207421752723e-09"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt" 
-		"rotateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt" 
-		"rotateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt" 
-		"rotateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt" 
-		"segmentScaleCompensate" " 1"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_01_IK_Jnt" 
-		"translate" " -type \"double3\" 6.75841423264046171 0.19331757620884105 -2.95737906326928623"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_01_IK_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_01_IK_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_01_IK_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_01_IK_Jnt|Penguin3:R_Toe_01_IK_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_01_IK_Jnt|Penguin3:R_Toe_01_IK_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_01_IK_Jnt|Penguin3:R_Toe_01_IK_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_01_IK_Jnt|Penguin3:R_Toe_01_IK_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_01_IK_Jnt|Penguin3:R_Toe_01_IK_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_01_IK_Jnt|Penguin3:R_Toe_01_IK_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_01_IK_Jnt|Penguin3:R_Toe_01_IK_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_01_IK_Jnt|Penguin3:R_Toe_01_IK_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_02_IK_Jnt" 
-		"translate" " -type \"double3\" 7.05632413350735987 -1.096537971534417e-09 -5.0602011469891295e-10"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_02_IK_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_02_IK_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_02_IK_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_02_IK_Jnt|Penguin3:R_Toe_02_IK_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_02_IK_Jnt|Penguin3:R_Toe_02_IK_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_02_IK_Jnt|Penguin3:R_Toe_02_IK_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_02_IK_Jnt|Penguin3:R_Toe_02_IK_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_02_IK_Jnt|Penguin3:R_Toe_02_IK_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_02_IK_Jnt|Penguin3:R_Toe_02_IK_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_02_IK_Jnt|Penguin3:R_Toe_02_IK_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_02_IK_Jnt|Penguin3:R_Toe_02_IK_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_03_IK_Jnt" 
-		"translate" " -type \"double3\" 6.72327043186885476 -0.60833707670823856 2.59539713185358778"
-		
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_03_IK_Jnt" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_03_IK_Jnt" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_03_IK_Jnt" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_03_IK_Jnt|Penguin3:R_Toe_03_IK_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_03_IK_Jnt|Penguin3:R_Toe_03_IK_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_03_IK_Jnt|Penguin3:R_Toe_03_IK_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_03_IK_Jnt|Penguin3:R_Toe_03_IK_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_03_IK_Jnt|Penguin3:R_Toe_03_IK_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_03_IK_Jnt|Penguin3:R_Toe_03_IK_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_03_IK_Jnt|Penguin3:R_Toe_03_IK_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Toe_03_IK_Jnt|Penguin3:R_Toe_03_IK_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Ankle_IK_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Ankle_IK_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Ankle_IK_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Ankle_IK_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Ankle_IK_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Ankle_IK_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Ankle_IK_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_02_Jnt|Penguin3:R_Leg_IK_03_Jnt|Penguin3:R_Ankle_IK_Jnt|Penguin3:R_Ankle_IK_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_01_Jnt_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_01_Jnt_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_01_Jnt_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_01_Jnt_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_01_Jnt_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_01_Jnt_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_01_Jnt_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Skeleton|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt|Penguin3:R_Leg_IK_01_Jnt_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls" "translate" " -type \"double3\" 0 0 0"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp" "translate" 
-		" -type \"double3\" 0 -16.91386699676513672 -0.86630582809448242"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl" 
-		"translate" " -type \"double3\" 319.94590605130855465 0 -809.4229988815213801"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl" 
-		"rotate" " -type \"double3\" 0 20.53703227323133973 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK" 
-		"translate" " -type \"double3\" 0 16.91386699676513672 0.86630582809448242"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 6.25768852233886719 -22.9794921875 -0.44356584548950195"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_01_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_01_Jnt_Ctrl_Grp_pointConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_01_Jnt_Ctrl_Grp_pointConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_01_Jnt_Ctrl_Grp_pointConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_01_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_01_Jnt_Ctrl_Grp_pointConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_PV_Ctrl_Grp" 
-		"translate" " -type \"double3\" 6.25768852233886719 -37.91319656372070313 11.22448858411777906"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_PV_Ctrl_Grp|Penguin3:L_Leg_IK_PV_Ctrl" 
-		"translate" " -type \"double3\" 0.0032719999999999971 0 -6.8230575"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 6.25768852233886808 -44.22794914245605469 4.24931716918945668"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Leg_IK_Handle" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Leg_IK_Handle|Penguin3:L_Leg_IK_Handle_poleVectorConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Leg_IK_Handle|Penguin3:L_Leg_IK_Handle_poleVectorConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Leg_IK_Handle|Penguin3:L_Leg_IK_Handle_poleVectorConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Leg_IK_Handle|Penguin3:L_Leg_IK_Handle_poleVectorConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Ankle_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Ankle_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Ankle_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Ankle_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Ankle_Jnt_Ctrl_Grp|Penguin3:L_Ankle_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Ankle_Jnt_Ctrl_Grp|Penguin3:L_Ankle_Jnt_Ctrl_Grp_pointConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Ankle_Jnt_Ctrl_Grp|Penguin3:L_Ankle_Jnt_Ctrl_Grp_pointConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Ankle_Jnt_Ctrl_Grp|Penguin3:L_Ankle_Jnt_Ctrl_Grp_pointConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Ankle_Jnt_Ctrl_Grp|Penguin3:L_Ankle_Jnt_Ctrl_Grp_pointConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_01_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 3.42586484793051227 5.95424529574677308 2.90152359008777694"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_01_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_01_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_01_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_01_Jnt_Ctrl_Grp|Penguin3:L_Toe_01_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_01_Jnt_Ctrl_Grp|Penguin3:L_Toe_01_Jnt_Ctrl_Grp_parentConstraint3" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_01_Jnt_Ctrl_Grp|Penguin3:L_Toe_01_Jnt_Ctrl_Grp_parentConstraint3" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_01_Jnt_Ctrl_Grp|Penguin3:L_Toe_01_Jnt_Ctrl_Grp_parentConstraint3" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_01_Jnt_Ctrl_Grp|Penguin3:L_Toe_01_Jnt_Ctrl_Grp_parentConstraint3" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_01_Jnt_Ctrl_Grp|Penguin3:L_Toe_01_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_01_Jnt_Ctrl_Grp|Penguin3:L_Toe_01_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_01_Jnt_Ctrl_Grp|Penguin3:L_Toe_01_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_01_Jnt_Ctrl_Grp|Penguin3:L_Toe_01_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_02_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 3.42176496679638831 6.16501115231699259 -0.069631099701041421"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_02_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_02_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_02_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_02_Jnt_Ctrl_Grp|Penguin3:L_Toe_02_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_02_Jnt_Ctrl_Grp|Penguin3:L_Toe_02_Jnt_Ctrl_Grp_parentConstraint3" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_02_Jnt_Ctrl_Grp|Penguin3:L_Toe_02_Jnt_Ctrl_Grp_parentConstraint3" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_02_Jnt_Ctrl_Grp|Penguin3:L_Toe_02_Jnt_Ctrl_Grp_parentConstraint3" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_02_Jnt_Ctrl_Grp|Penguin3:L_Toe_02_Jnt_Ctrl_Grp_parentConstraint3" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_02_Jnt_Ctrl_Grp|Penguin3:L_Toe_02_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_02_Jnt_Ctrl_Grp|Penguin3:L_Toe_02_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_02_Jnt_Ctrl_Grp|Penguin3:L_Toe_02_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_02_Jnt_Ctrl_Grp|Penguin3:L_Toe_02_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_03_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 3.51062505970941174 5.61721828958116021 -2.6981525421143715"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_03_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_03_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_03_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_03_Jnt_Ctrl_Grp|Penguin3:L_Toe_03_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_03_Jnt_Ctrl_Grp|Penguin3:L_Toe_03_Jnt_Ctrl_Grp_parentConstraint3" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_03_Jnt_Ctrl_Grp|Penguin3:L_Toe_03_Jnt_Ctrl_Grp_parentConstraint3" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_03_Jnt_Ctrl_Grp|Penguin3:L_Toe_03_Jnt_Ctrl_Grp_parentConstraint3" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_03_Jnt_Ctrl_Grp|Penguin3:L_Toe_03_Jnt_Ctrl_Grp_parentConstraint3" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_03_Jnt_Ctrl_Grp|Penguin3:L_Toe_03_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_03_Jnt_Ctrl_Grp|Penguin3:L_Toe_03_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_03_Jnt_Ctrl_Grp|Penguin3:L_Toe_03_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:L_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_IK_03_Jnt_Ctrl|Penguin3:L_Toe_03_Jnt_Ctrl_Grp|Penguin3:L_Toe_03_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" -6.05228996276855469 -22.9795 -0.443566"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_01_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_01_Jnt_Ctrl_Grp_pointConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_01_Jnt_Ctrl_Grp_pointConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_01_Jnt_Ctrl_Grp_pointConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_01_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_01_Jnt_Ctrl_Grp_pointConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_PV_Ctrl_Grp" 
-		"translate" " -type \"double3\" -5.84688996276855466 -37.9132 11.22448805837620434"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_PV_Ctrl_Grp|Penguin3:R_Leg_IK_02_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0.0032719999999999971 0 -6.8230575"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" -6.05228999999999928 -44.22789999999999111 4.24932000000003551"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Leg_IK_Handle" 
-		"translate" " -type \"double3\" -5.5977125157369301e-09 -4.3692871543044021e-10 1.0787992721361661e-10"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Leg_IK_Handle|Penguin3:R_Leg_IK_Handle_poleVectorConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Leg_IK_Handle|Penguin3:R_Leg_IK_Handle_poleVectorConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Leg_IK_Handle|Penguin3:R_Leg_IK_Handle_poleVectorConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Leg_IK_Handle|Penguin3:R_Leg_IK_Handle_poleVectorConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Ankle_IK_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" -5.5976698831727845e-09 -4.3667114368872717e-10 1.0811618267325684e-10"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Ankle_IK_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Ankle_IK_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Ankle_IK_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Ankle_IK_Jnt_Ctrl_Grp|Penguin3:R_Ankle_IK_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Ankle_IK_Jnt_Ctrl_Grp|Penguin3:R_Ankle_IK_Jnt_Ctrl_Grp_pointConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Ankle_IK_Jnt_Ctrl_Grp|Penguin3:R_Ankle_IK_Jnt_Ctrl_Grp_pointConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Ankle_IK_Jnt_Ctrl_Grp|Penguin3:R_Ankle_IK_Jnt_Ctrl_Grp_pointConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Ankle_IK_Jnt_Ctrl_Grp|Penguin3:R_Ankle_IK_Jnt_Ctrl_Grp_pointConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_01_IK_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 3.33737078813626908 5.96690088719424239 -2.77807046901477861"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_01_IK_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_01_IK_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_01_IK_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_01_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_01_IK_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_01_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_01_IK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_01_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_01_IK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_01_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_01_IK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_01_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_01_IK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_01_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_01_IK_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_01_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_01_IK_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_01_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_01_IK_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_01_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_01_IK_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_02_IK_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 3.42890208486721804 6.16419046619114397 0.19260483457162536"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_02_IK_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_02_IK_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_02_IK_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_02_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_02_IK_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_02_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_02_IK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_02_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_02_IK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_02_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_02_IK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_02_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_02_IK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_02_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_02_IK_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_02_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_02_IK_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_02_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_02_IK_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_02_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_02_IK_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_03_IK_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 3.60233747709852992 5.6045390785031941 2.81439726140104085"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_03_IK_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_03_IK_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_03_IK_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_03_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_03_IK_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_03_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_03_IK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_03_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_03_IK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_03_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_03_IK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_03_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_03_IK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_03_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_03_IK_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_03_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_03_IK_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_03_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_03_IK_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:IK|Penguin3:R_Leg_IK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_IK_03_Jnt_Ctrl|Penguin3:R_Toe_03_IK_Jnt_Ctrl_Grp|Penguin3:R_Toe_03_IK_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK" 
-		"translate" " -type \"double3\" 0 16.91386699676513672 0.86630582809448242"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Ankle_FK_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 6.2576885223387535 -44.22794914245606179 4.24931716918945313"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Ankle_FK_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Ankle_FK_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Ankle_FK_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Ankle_FK_Jnt_Ctrl_Grp|Penguin3:L_Ankle_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Ankle_FK_Jnt_Ctrl_Grp|Penguin3:L_Ankle_FK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Ankle_FK_Jnt_Ctrl_Grp|Penguin3:L_Ankle_FK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Ankle_FK_Jnt_Ctrl_Grp|Penguin3:L_Ankle_FK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Ankle_FK_Jnt_Ctrl_Grp|Penguin3:L_Ankle_FK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_01_FK_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 3.35616493225086288 -46.79218292236329546 10.62225151062023087"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_01_FK_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_01_FK_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_01_FK_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_01_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_01_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_01_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_01_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_01_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_01_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_01_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_01_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_01_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_01_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_02_FK_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 6.32731962203968124 -46.75880241394045811 10.83039760589599609"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_02_FK_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_02_FK_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_02_FK_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_02_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_02_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_02_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_02_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_02_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_02_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_02_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_02_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_02_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_02_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_03_FK_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 8.95584106445301131 -46.92300415039065342 10.30029296875"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_03_FK_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_03_FK_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_03_FK_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_03_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_03_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_03_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_03_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_03_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_03_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_03_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_03_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_03_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_03_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_03_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_03_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_03_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_03_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_03_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_03_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Toe_03_FK_Jnt_Ctrl_Grp|Penguin3:L_Toe_03_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Ankle_FK_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" -6.05229000033205011 -44.22789999999996269 4.24932000000023891"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Ankle_FK_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Ankle_FK_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Ankle_FK_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Ankle_FK_Jnt_Ctrl_Grp|Penguin3:R_Ankle_FK_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Ankle_FK_Jnt_Ctrl_Grp|Penguin3:R_Ankle_FK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Ankle_FK_Jnt_Ctrl_Grp|Penguin3:R_Ankle_FK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Ankle_FK_Jnt_Ctrl_Grp|Penguin3:R_Ankle_FK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Ankle_FK_Jnt_Ctrl_Grp|Penguin3:R_Ankle_FK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Ankle_FK_Jnt_Ctrl_Grp|Penguin3:R_Ankle_FK_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Ankle_FK_Jnt_Ctrl_Grp|Penguin3:R_Ankle_FK_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Ankle_FK_Jnt_Ctrl_Grp|Penguin3:R_Ankle_FK_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Ankle_FK_Jnt_Ctrl_Grp|Penguin3:R_Ankle_FK_Jnt_Ctrl_Grp_scaleConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_01_FK_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" -3.35616000000015902 -46.79219999999999402 10.62230000000033669"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_01_FK_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_01_FK_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_01_FK_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_01_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_01_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_01_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_01_FK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_01_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_01_FK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_01_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_01_FK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_01_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_01_FK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_01_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_01_FK_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_01_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_01_FK_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_01_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_01_FK_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_01_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_01_FK_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_02_FK_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" -6.32732000000021344 -46.75879999999997949 10.83040000000028158"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_02_FK_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_02_FK_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_02_FK_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_02_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_02_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_02_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_02_FK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_02_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_02_FK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_02_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_02_FK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_02_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_02_FK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_02_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_02_FK_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_02_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_02_FK_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_02_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_02_FK_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_02_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_02_FK_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_03_FK_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" -8.95584000000019387 -46.92299999999998761 10.30030000000033397"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_03_FK_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_03_FK_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_03_FK_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_03_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_03_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_03_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_03_FK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_03_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_03_FK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_03_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_03_FK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_03_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_03_FK_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_03_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_03_FK_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_03_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_03_FK_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_03_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_03_FK_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Toe_03_FK_Jnt_Ctrl_Grp|Penguin3:R_Toe_03_FK_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" -6.05228996276855469 -22.9795 -0.44356600000003255"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_01_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_01_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_02_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" -5.84688996276861417 -37.91319999999999624 3.36222000000009302"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_02_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_02_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_02_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_02_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_02_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_02_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_02_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_02_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_02_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_02_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_02_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_02_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_02_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_03_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" -6.05229000000008455 -44.22789999999999111 4.24932000000023891"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_03_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_03_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_03_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_03_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_03_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_03_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_03_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_03_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_03_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_03_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_03_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:R_Leg_FK_03_Jnt_Ctrl_Grp|Penguin3:R_Leg_FK_03_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 6.25768852233886719 -22.9794921875 -0.44356584548950195"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_01_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_01_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_02_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 6.25768852233886719 -37.91319656372070313 3.36222052574157715"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_02_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_02_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_02_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_02_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_02_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_02_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_02_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_02_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_02_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_02_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_02_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_02_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_02_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_03_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 6.2576885223387535 -44.22794914245606179 4.24931716918945313"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_03_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_03_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_03_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_03_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_03_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_03_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_03_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_03_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_03_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_03_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_03_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:FK|Penguin3:L_Leg_FK_03_Jnt_Ctrl_Grp|Penguin3:L_Leg_FK_03_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:COG_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:COG_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:COG_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:COG_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:COG_Jnt_Ctrl_Grp|Penguin3:COG_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:COG_Jnt_Ctrl_Grp|Penguin3:COG_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:COG_Jnt_Ctrl_Grp|Penguin3:COG_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:COG_Jnt_Ctrl_Grp|Penguin3:COG_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:COG_Jnt_Ctrl_Grp|Penguin3:COG_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:COG_Jnt_Ctrl_Grp|Penguin3:COG_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:COG_Jnt_Ctrl_Grp|Penguin3:COG_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:COG_Jnt_Ctrl_Grp|Penguin3:COG_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:COG_Jnt_Ctrl_Grp|Penguin3:COG_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_01_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_01_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_01_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_01_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_01_Jnt_Ctrl_Grp|Penguin3:Spine_01_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_01_Jnt_Ctrl_Grp|Penguin3:Spine_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_01_Jnt_Ctrl_Grp|Penguin3:Spine_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_01_Jnt_Ctrl_Grp|Penguin3:Spine_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_01_Jnt_Ctrl_Grp|Penguin3:Spine_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_01_Jnt_Ctrl_Grp|Penguin3:Spine_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_01_Jnt_Ctrl_Grp|Penguin3:Spine_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_01_Jnt_Ctrl_Grp|Penguin3:Spine_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_01_Jnt_Ctrl_Grp|Penguin3:Spine_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_02_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 0 10.39337563514709473 0.60874080658004459"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_02_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_02_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_02_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_02_Jnt_Ctrl_Grp|Penguin3:Spine_02_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_02_Jnt_Ctrl_Grp|Penguin3:Spine_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_02_Jnt_Ctrl_Grp|Penguin3:Spine_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_02_Jnt_Ctrl_Grp|Penguin3:Spine_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_02_Jnt_Ctrl_Grp|Penguin3:Spine_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_02_Jnt_Ctrl_Grp|Penguin3:Spine_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_02_Jnt_Ctrl_Grp|Penguin3:Spine_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_02_Jnt_Ctrl_Grp|Penguin3:Spine_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_02_Jnt_Ctrl_Grp|Penguin3:Spine_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_03_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 0 20.72462761402130127 0.7996621131902657"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_03_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_03_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_03_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_03_Jnt_Ctrl_Grp|Penguin3:Spine_03_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_03_Jnt_Ctrl_Grp|Penguin3:Spine_03_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_03_Jnt_Ctrl_Grp|Penguin3:Spine_03_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_03_Jnt_Ctrl_Grp|Penguin3:Spine_03_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_03_Jnt_Ctrl_Grp|Penguin3:Spine_03_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_03_Jnt_Ctrl_Grp|Penguin3:Spine_03_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_03_Jnt_Ctrl_Grp|Penguin3:Spine_03_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_03_Jnt_Ctrl_Grp|Penguin3:Spine_03_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_03_Jnt_Ctrl_Grp|Penguin3:Spine_03_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 0 28.62775564193725586 0.98315334320125203"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl" 
-		"visibility" " -av 1"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl" 
-		"rotate" " -type \"double3\" -8.81469223186057782 41.06215154625517272 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl" 
-		"rotateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl" 
-		"rotateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl" 
-		"rotateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl" 
-		"scale" " -type \"double3\" 1 1 1"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl" 
-		"scaleX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl" 
-		"scaleY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl" 
-		"scaleZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl" 
-		"FollowTranslate" " -av -k 1 1"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl" 
-		"FollowRotate" " -av -k 1 1"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" -0.42445294961123636 34.68891516154752708 0.4959444740006802"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl" 
-		"visibility" " -av 1"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl" 
-		"rotate" " -type \"double3\" 3.14986374535375679 14.35190468739866354 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl" 
-		"rotateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl" 
-		"rotateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl" 
-		"rotateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl" 
-		"scale" " -type \"double3\" 1 1 1"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl" 
-		"scaleX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl" 
-		"scaleY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl" 
-		"scaleZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl" 
-		"FollowTranslate" " -av -k 1 1"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl" 
-		"FollowRotate" " -av -k 1 1"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 12.28518772125232772 19.29948550462722778 0.14673519134589696"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp|Penguin3:L_Wing_01_Jnt_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -56.61302322378165286"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp|Penguin3:L_Wing_01_Jnt_Ctrl" 
-		"rotateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp|Penguin3:L_Wing_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp|Penguin3:L_Wing_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp|Penguin3:L_Wing_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp|Penguin3:L_Wing_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp|Penguin3:L_Wing_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp|Penguin3:L_Wing_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp|Penguin3:L_Wing_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp|Penguin3:L_Wing_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 14.71206840961247053 6.11017589034893405 1.32153916359027335"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl" 
-		"visibility" " -av 1"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -3.56123059585378821"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl" 
-		"rotateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl" 
-		"rotateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl" 
-		"rotateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl" 
-		"scale" " -type \"double3\" 1 1 1"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl" 
-		"scaleX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl" 
-		"scaleY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl" 
-		"scaleZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl" 
-		"FollowTranslate" " -av -k 1 1"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl" 
-		"FollowRotate" " -av -k 1 1"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 16.48062954918691503 -10.61127477773464278 1.70471823215575569"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp|Penguin3:L_Wing_03_Jnt_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -8.37189718215009471"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp|Penguin3:L_Wing_03_Jnt_Ctrl" 
-		"rotateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp|Penguin3:L_Wing_03_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp|Penguin3:L_Wing_03_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp|Penguin3:L_Wing_03_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp|Penguin3:L_Wing_03_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp|Penguin3:L_Wing_03_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp|Penguin3:L_Wing_03_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp|Penguin3:L_Wing_03_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp|Penguin3:L_Wing_03_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" -12.28519999999991796 19.29948699676513613 0.14673482809519101"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp|Penguin3:R_Wing_01_Jnt_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -56.05143369788216035"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp|Penguin3:R_Wing_01_Jnt_Ctrl" 
-		"rotateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp|Penguin3:R_Wing_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp|Penguin3:R_Wing_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp|Penguin3:R_Wing_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp|Penguin3:R_Wing_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp|Penguin3:R_Wing_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp|Penguin3:R_Wing_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp|Penguin3:R_Wing_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp|Penguin3:R_Wing_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" -14.84123250813615869 6.13460301118627527 1.32153882809529932"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl" 
-		"visibility" " -av 1"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -1.98150419631461472"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl" 
-		"rotateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl" 
-		"rotateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl" 
-		"rotateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl" 
-		"scale" " -type \"double3\" 1 1 1"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl" 
-		"scaleX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl" 
-		"scaleY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl" 
-		"scaleZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl" 
-		"FollowTranslate" " -av -k 1 1"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl" 
-		"FollowRotate" " -av -k 1 1"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" -17.23335811602169088 -10.50910515111031884 1.70471782809534034"
-		
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl" 
-		"visibility" " -av 1"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -5.78689326297812467"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl" 
-		"rotateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl" 
-		"rotateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl" 
-		"rotateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl" 
-		"scale" " -type \"double3\" 1 1 1"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl" 
-		"scaleX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl" 
-		"scaleY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl" 
-		"scaleZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl" 
-		"FollowTranslate" " -av -k 1 1"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl" 
-		"FollowRotate" " -av -k 1 1"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_01_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 0 -21.79040431976318359 -9.31715750694263534"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_01_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_01_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_01_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_01_Jnt_Ctrl_Grp|Penguin3:Tail_01_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_01_Jnt_Ctrl_Grp|Penguin3:Tail_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_01_Jnt_Ctrl_Grp|Penguin3:Tail_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_01_Jnt_Ctrl_Grp|Penguin3:Tail_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_01_Jnt_Ctrl_Grp|Penguin3:Tail_01_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_01_Jnt_Ctrl_Grp|Penguin3:Tail_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_01_Jnt_Ctrl_Grp|Penguin3:Tail_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_01_Jnt_Ctrl_Grp|Penguin3:Tail_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_01_Jnt_Ctrl_Grp|Penguin3:Tail_01_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_02_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 0 -26.28085422515869141 -14.07820606231666716"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_02_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_02_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_02_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_02_Jnt_Ctrl_Grp|Penguin3:Tail_02_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_02_Jnt_Ctrl_Grp|Penguin3:Tail_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_02_Jnt_Ctrl_Grp|Penguin3:Tail_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_02_Jnt_Ctrl_Grp|Penguin3:Tail_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_02_Jnt_Ctrl_Grp|Penguin3:Tail_02_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_02_Jnt_Ctrl_Grp|Penguin3:Tail_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_02_Jnt_Ctrl_Grp|Penguin3:Tail_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_02_Jnt_Ctrl_Grp|Penguin3:Tail_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Tail_02_Jnt_Ctrl_Grp|Penguin3:Tail_02_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Hip_Jnt_Ctrl_Grp" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Hip_Jnt_Ctrl_Grp" 
-		"translateX" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Hip_Jnt_Ctrl_Grp" 
-		"translateY" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Hip_Jnt_Ctrl_Grp" 
-		"translateZ" " -av"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Hip_Jnt_Ctrl_Grp|Penguin3:Hip_Jnt_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Hip_Jnt_Ctrl_Grp|Penguin3:Hip_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Hip_Jnt_Ctrl_Grp|Penguin3:Hip_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Hip_Jnt_Ctrl_Grp|Penguin3:Hip_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Hip_Jnt_Ctrl_Grp|Penguin3:Hip_Jnt_Ctrl_Grp_parentConstraint1" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Hip_Jnt_Ctrl_Grp|Penguin3:Hip_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Hip_Jnt_Ctrl_Grp|Penguin3:Hip_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateX" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Hip_Jnt_Ctrl_Grp|Penguin3:Hip_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateY" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Hip_Jnt_Ctrl_Grp|Penguin3:Hip_Jnt_Ctrl_Grp_parentConstraint2" 
-		"translateZ" " -k 0"
-		2 "|Penguin3:Penguin|Penguin3:Deformers" "translate" " -type \"double3\" 0 0 0"
-		
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl.FollowTranslate" 
-		"PenguinRN2.placeHolderList[1]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl.FollowRotate" 
-		"PenguinRN2.placeHolderList[2]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl.translateX" 
-		"PenguinRN2.placeHolderList[3]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl.translateY" 
-		"PenguinRN2.placeHolderList[4]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl.translateZ" 
-		"PenguinRN2.placeHolderList[5]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl.rotateX" 
-		"PenguinRN2.placeHolderList[6]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl.rotateY" 
-		"PenguinRN2.placeHolderList[7]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl.rotateZ" 
-		"PenguinRN2.placeHolderList[8]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl.scaleX" 
-		"PenguinRN2.placeHolderList[9]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl.scaleY" 
-		"PenguinRN2.placeHolderList[10]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl.scaleZ" 
-		"PenguinRN2.placeHolderList[11]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Spine_04_Jnt_Ctrl_Grp|Penguin3:Spine_04_Jnt_Ctrl.visibility" 
-		"PenguinRN2.placeHolderList[12]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl.FollowTranslate" 
-		"PenguinRN2.placeHolderList[13]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl.FollowRotate" 
-		"PenguinRN2.placeHolderList[14]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl.translateX" 
-		"PenguinRN2.placeHolderList[15]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl.translateY" 
-		"PenguinRN2.placeHolderList[16]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl.translateZ" 
-		"PenguinRN2.placeHolderList[17]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl.rotateX" 
-		"PenguinRN2.placeHolderList[18]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl.rotateY" 
-		"PenguinRN2.placeHolderList[19]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl.rotateZ" 
-		"PenguinRN2.placeHolderList[20]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl.scaleX" 
-		"PenguinRN2.placeHolderList[21]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl.scaleY" 
-		"PenguinRN2.placeHolderList[22]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl.scaleZ" 
-		"PenguinRN2.placeHolderList[23]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:Neck_Jnt_Ctrl_Grp|Penguin3:Neck_Jnt_Ctrl.visibility" 
-		"PenguinRN2.placeHolderList[24]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp|Penguin3:L_Wing_01_Jnt_Ctrl.FollowTranslate" 
-		"PenguinRN2.placeHolderList[25]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp|Penguin3:L_Wing_01_Jnt_Ctrl.FollowRotate" 
-		"PenguinRN2.placeHolderList[26]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp|Penguin3:L_Wing_01_Jnt_Ctrl.translateX" 
-		"PenguinRN2.placeHolderList[27]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp|Penguin3:L_Wing_01_Jnt_Ctrl.translateY" 
-		"PenguinRN2.placeHolderList[28]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp|Penguin3:L_Wing_01_Jnt_Ctrl.translateZ" 
-		"PenguinRN2.placeHolderList[29]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp|Penguin3:L_Wing_01_Jnt_Ctrl.rotateX" 
-		"PenguinRN2.placeHolderList[30]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp|Penguin3:L_Wing_01_Jnt_Ctrl.rotateY" 
-		"PenguinRN2.placeHolderList[31]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp|Penguin3:L_Wing_01_Jnt_Ctrl.rotateZ" 
-		"PenguinRN2.placeHolderList[32]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp|Penguin3:L_Wing_01_Jnt_Ctrl.scaleX" 
-		"PenguinRN2.placeHolderList[33]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp|Penguin3:L_Wing_01_Jnt_Ctrl.scaleY" 
-		"PenguinRN2.placeHolderList[34]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp|Penguin3:L_Wing_01_Jnt_Ctrl.scaleZ" 
-		"PenguinRN2.placeHolderList[35]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_01_Jnt_Ctrl_Grp|Penguin3:L_Wing_01_Jnt_Ctrl.visibility" 
-		"PenguinRN2.placeHolderList[36]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl.FollowTranslate" 
-		"PenguinRN2.placeHolderList[37]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl.FollowRotate" 
-		"PenguinRN2.placeHolderList[38]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl.translateX" 
-		"PenguinRN2.placeHolderList[39]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl.translateY" 
-		"PenguinRN2.placeHolderList[40]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl.translateZ" 
-		"PenguinRN2.placeHolderList[41]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl.rotateX" 
-		"PenguinRN2.placeHolderList[42]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl.rotateY" 
-		"PenguinRN2.placeHolderList[43]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl.rotateZ" 
-		"PenguinRN2.placeHolderList[44]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl.scaleX" 
-		"PenguinRN2.placeHolderList[45]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl.scaleY" 
-		"PenguinRN2.placeHolderList[46]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl.scaleZ" 
-		"PenguinRN2.placeHolderList[47]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_02_Jnt_Ctrl_Grp|Penguin3:L_Wing_02_Jnt_Ctrl.visibility" 
-		"PenguinRN2.placeHolderList[48]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp|Penguin3:L_Wing_03_Jnt_Ctrl.FollowTranslate" 
-		"PenguinRN2.placeHolderList[49]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp|Penguin3:L_Wing_03_Jnt_Ctrl.FollowRotate" 
-		"PenguinRN2.placeHolderList[50]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp|Penguin3:L_Wing_03_Jnt_Ctrl.translateX" 
-		"PenguinRN2.placeHolderList[51]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp|Penguin3:L_Wing_03_Jnt_Ctrl.translateY" 
-		"PenguinRN2.placeHolderList[52]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp|Penguin3:L_Wing_03_Jnt_Ctrl.translateZ" 
-		"PenguinRN2.placeHolderList[53]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp|Penguin3:L_Wing_03_Jnt_Ctrl.rotateX" 
-		"PenguinRN2.placeHolderList[54]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp|Penguin3:L_Wing_03_Jnt_Ctrl.rotateY" 
-		"PenguinRN2.placeHolderList[55]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp|Penguin3:L_Wing_03_Jnt_Ctrl.rotateZ" 
-		"PenguinRN2.placeHolderList[56]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp|Penguin3:L_Wing_03_Jnt_Ctrl.scaleX" 
-		"PenguinRN2.placeHolderList[57]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp|Penguin3:L_Wing_03_Jnt_Ctrl.scaleY" 
-		"PenguinRN2.placeHolderList[58]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp|Penguin3:L_Wing_03_Jnt_Ctrl.scaleZ" 
-		"PenguinRN2.placeHolderList[59]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:L_Wing_03_Jnt_Ctrl_Grp|Penguin3:L_Wing_03_Jnt_Ctrl.visibility" 
-		"PenguinRN2.placeHolderList[60]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp|Penguin3:R_Wing_01_Jnt_Ctrl.FollowTranslate" 
-		"PenguinRN2.placeHolderList[61]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp|Penguin3:R_Wing_01_Jnt_Ctrl.FollowRotate" 
-		"PenguinRN2.placeHolderList[62]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp|Penguin3:R_Wing_01_Jnt_Ctrl.translateX" 
-		"PenguinRN2.placeHolderList[63]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp|Penguin3:R_Wing_01_Jnt_Ctrl.translateY" 
-		"PenguinRN2.placeHolderList[64]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp|Penguin3:R_Wing_01_Jnt_Ctrl.translateZ" 
-		"PenguinRN2.placeHolderList[65]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp|Penguin3:R_Wing_01_Jnt_Ctrl.rotateX" 
-		"PenguinRN2.placeHolderList[66]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp|Penguin3:R_Wing_01_Jnt_Ctrl.rotateY" 
-		"PenguinRN2.placeHolderList[67]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp|Penguin3:R_Wing_01_Jnt_Ctrl.rotateZ" 
-		"PenguinRN2.placeHolderList[68]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp|Penguin3:R_Wing_01_Jnt_Ctrl.scaleX" 
-		"PenguinRN2.placeHolderList[69]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp|Penguin3:R_Wing_01_Jnt_Ctrl.scaleY" 
-		"PenguinRN2.placeHolderList[70]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp|Penguin3:R_Wing_01_Jnt_Ctrl.scaleZ" 
-		"PenguinRN2.placeHolderList[71]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_01_Jnt_Ctrl_Grp|Penguin3:R_Wing_01_Jnt_Ctrl.visibility" 
-		"PenguinRN2.placeHolderList[72]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl.FollowTranslate" 
-		"PenguinRN2.placeHolderList[73]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl.FollowRotate" 
-		"PenguinRN2.placeHolderList[74]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl.translateX" 
-		"PenguinRN2.placeHolderList[75]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl.translateY" 
-		"PenguinRN2.placeHolderList[76]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl.translateZ" 
-		"PenguinRN2.placeHolderList[77]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl.rotateX" 
-		"PenguinRN2.placeHolderList[78]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl.rotateY" 
-		"PenguinRN2.placeHolderList[79]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl.rotateZ" 
-		"PenguinRN2.placeHolderList[80]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl.scaleX" 
-		"PenguinRN2.placeHolderList[81]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl.scaleY" 
-		"PenguinRN2.placeHolderList[82]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl.scaleZ" 
-		"PenguinRN2.placeHolderList[83]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_02_Jnt_Ctrl_Grp|Penguin3:R_Wing_02_Jnt_Ctrl.visibility" 
-		"PenguinRN2.placeHolderList[84]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl.FollowTranslate" 
-		"PenguinRN2.placeHolderList[85]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl.FollowRotate" 
-		"PenguinRN2.placeHolderList[86]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl.translateX" 
-		"PenguinRN2.placeHolderList[87]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl.translateY" 
-		"PenguinRN2.placeHolderList[88]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl.translateZ" 
-		"PenguinRN2.placeHolderList[89]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl.rotateX" 
-		"PenguinRN2.placeHolderList[90]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl.rotateY" 
-		"PenguinRN2.placeHolderList[91]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl.rotateZ" 
-		"PenguinRN2.placeHolderList[92]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl.scaleX" 
-		"PenguinRN2.placeHolderList[93]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl.scaleY" 
-		"PenguinRN2.placeHolderList[94]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl.scaleZ" 
-		"PenguinRN2.placeHolderList[95]" ""
-		5 4 "PenguinRN2" "|Penguin3:Penguin|Penguin3:Controls|Penguin3:Transform_Ctrl_Grp|Penguin3:Transform_Ctrl|Penguin3:RK|Penguin3:R_Wing_03_Jnt_Ctrl_Grp|Penguin3:R_Wing_03_Jnt_Ctrl.visibility" 
-		"PenguinRN2.placeHolderList[96]" "";
-lockNode -l 1 ;
 createNode animCurveTA -n "L_Wing_01_Jnt_Ctrl_rotateX4";
 	rename -uid "77B74F2F-4116-B204-16BC-ED91085CC525";
 	setAttr ".tan" 2;
@@ -38440,7 +35113,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:Translate_FK_Ctrl" "blendParent1" 
 		" -k 1"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo" 
-		"visibility" " -av 1"
+		"visibility" " -av 0"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo8" 
 		"visibility" " -av 0"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo1" 
@@ -38450,7 +35123,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo2" 
 		"visibility" " -av 0"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:Geo01_Geo|EECORig_Claw:Body_Grp|EECORig_Claw:Face|EECORig_Claw:Face01_Geo3" 
-		"visibility" " -av 0"
+		"visibility" " -av 1"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
 		"visibility" " -av 1"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Cog_FK_Ctrl_Grp1|EECORig_Claw:Cog_FK_Ctrl" 
@@ -38490,8 +35163,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
 		"visibility" " -av 1"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
-		"translate" " -type \"double3\" -0.43148167102621537 0.0086843015679020901 0.032443200174544821"
-		
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
 		"translateX" " -av"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:Body_FK_Ctrl_Grp|EECORig_Claw:Body_FK_Ctrl" 
@@ -38543,7 +35215,8 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:L_Arm_Claw_Bottom_FK_Ctrl" 
 		"rotateZ" " -av"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 19.24422368969643315 -21.02914605754532928 55.36459562108861121"
+		
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl" 
 		"rotateX" " -av"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl" 
@@ -38551,7 +35224,8 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_1_FK_Ctrl_Grp|EECORig_Claw:R_Arm_1_FK_Ctrl" 
 		"rotateZ" " -av"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 10.2232340717041339 56.74571988394323796 48.0371915339262614"
+		
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl" 
 		"rotateX" " -av"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl" 
@@ -38559,7 +35233,8 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_2_FK_Ctrl_Grp|EECORig_Claw:R_Arm_2_FK_Ctrl" 
 		"rotateZ" " -av"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" -0.13927848347883928 0.3964265434820094 -0.29704853666595316"
+		
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl" 
 		"translateX" " -av"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl" 
@@ -38567,7 +35242,8 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl" 
 		"translateZ" " -av"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" -11.94546078369022091 55.56261504832227871 49.81650410038447774"
+		
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl" 
 		"rotateX" " -av"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_FK_Ctrl_Grp|EECORig_Claw:R_Arm_3_FK_Ctrl" 
@@ -38607,7 +35283,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:FK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl_Grp|EECORig_Claw:R_Arm_Claw_Bottom_FK_Ctrl" 
 		"rotateZ" " -av"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl" 
-		"translate" " -type \"double3\" -0.50485179112861589 0.20186871829622713 -2.79304684108336065"
+		"translate" " -type \"double3\" -0.81829440121979313 -0.73948315046171298 1.28519907679018064"
 		
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:F_L_LEG1|EECORig_Claw:FL_AIM_IK_Ctrl_Grp|EECORig_Claw:FL_AIM_IK_Ctrl" 
 		"translateX" " -av"
@@ -38634,7 +35310,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
 		"visibility" " -av 1"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
-		"translate" " -type \"double3\" 0.5809939153462198 -0.96890522141860635 2.37445265163333508"
+		"translate" " -type \"double3\" 1.53529793636801015 -0.66199745962910583 3.17522733267355672"
 		
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_L_LEG1|EECORig_Claw:BL_AIM_IK_Ctrl_Grp|EECORig_Claw:BL_AIM_IK_Ctrl" 
 		"translateX" " -av"
@@ -38662,7 +35338,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
 		"visibility" " -av 1"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
-		"translate" " -type \"double3\" -1.07327165071935737 0.87588822235599884 -3.04901598315160527"
+		"translate" " -type \"double3\" -0.36898730128268742 0.099421110470474083 -1.66954577591457154"
 		
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:B_R_LEG1|EECORig_Claw:BR_AIM_IK_Ctrl_Grp|EECORig_Claw:BR_AIM_IK_Ctrl" 
 		"translateX" " -av"
@@ -38721,7 +35397,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
 		"translateZ" " -av"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -17.30080613102052922"
+		"rotate" " -type \"double3\" 0 0 -13.26168425055193012"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
 		"rotateX" " -av"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:L_Arm|EECORig_Claw:L_Arm_3_IK_Ctrl_Grp|EECORig_Claw:L_Arm_3_IK_Ctrl" 
@@ -38779,7 +35455,7 @@ createNode reference -n "EECORig_ClawRN";
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
 		"translateZ" " -av"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
-		"rotate" " -type \"double3\" 0 0 -22.9444180414934884"
+		"rotate" " -type \"double3\" 0 0 7.41025517484388185"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
 		"rotateX" " -av"
 		2 "|EECORig_Claw:EECO_Rig|EECORig_Claw:EECO|EECORig_Claw:Controls|EECORig_Claw:IK_Controls|EECORig_Claw:R_Arm|EECORig_Claw:R_Arm_3_IK_Ctrl_Grp|EECORig_Claw:R_Arm_3_IK_Ctrl" 
@@ -39830,87 +36506,122 @@ createNode animCurveTA -n "R_Arm_3_IK_Ctrl_rotateX";
 	rename -uid "A8089A43-4D2F-DA17-0BAA-3B8C8E1D7957";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 19 ".ktv[0:18]"  1 41.151577933387337 36 41.151577933387337
-		 40 39.679299898286104 43 51.155619636749158 57 51.155619636749158 62 41.821505121739357
-		 66 34.690069163527852 70 34.321877114199189 75 33.283921816858332 85 25.501701335137387
-		 100 21.581500936800378 102 18.957759718192186 105 18.166603670273069 108 -12.328276429934053
-		 109 -23.76924867979708 111 -31.981609174029046 113 -32.602762567035803 121 -41.859717276632118
-		 126 0;
+	setAttr -s 39 ".ktv[0:38]"  1 41.151577933387337 9 46.83073302161489
+		 36 41.151577933387337 41 39.679299898286104 43 51.155619636749158 57 51.155619636749158
+		 62 41.821505121739357 66 34.690069163527852 70 34.321877114199189 75 33.283921816858332
+		 85 25.501701335137387 100 21.581500936800378 102 18.957759718192186 105 18.166603670273069
+		 108 -12.328276429934053 109 -23.76924867979708 111 -31.981609174029046 113 -32.602762567035803
+		 121 -41.859717276632118 126 0 148 0 149 -1.7923554865778599 151 -1.7923554865778599
+		 152 -15.224779697095597 155 -15.738092064356765 157 -15.738092064356765 158 -11.102846370248274
+		 160 -11.102846370248274 161 -12.388219132609754 163 -12.388219132609754 164 -20.928413129325687
+		 165 -20.928413129325687 166 -23.467421472601259 167 -23.467421472601259 168 -17.849168136237047
+		 169 -17.849168136237047 170 -18.76527682925569 171 -18.76527682925569 172 -15.370462492184853;
 createNode animCurveTA -n "R_Arm_3_IK_Ctrl_rotateY";
 	rename -uid "AD824014-40F1-0E1E-77CD-5FA407B35D1A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 17 ".ktv[0:16]"  1 25.903755397540362 36 25.903755397540362
-		 40 -42.266951572008587 43 -24.761530095912224 57 -24.761530095912224 62 -18.14972395375209
-		 70 -24.332404461496566 85 13.68325666919649 100 30.954396516953356 102 33.192879187160138
-		 105 32.575928867076627 108 34.851154194571407 109 34.20012093800608 111 32.881766039022523
-		 113 34.943963870806485 121 -17.695082085279989 126 0;
+	setAttr -s 37 ".ktv[0:36]"  1 25.903755397540362 9 8.1065206621039483
+		 36 25.903755397540362 41 -42.266951572008587 43 -24.761530095912224 57 -24.761530095912224
+		 62 -18.14972395375209 70 -24.332404461496566 85 13.68325666919649 100 30.954396516953356
+		 102 33.192879187160138 105 32.575928867076627 108 34.851154194571407 109 34.20012093800608
+		 111 32.881766039022523 113 34.943963870806485 121 -17.695082085279989 126 0 148 0
+		 149 16.315287031660802 151 16.315287031660802 152 0.33966272556373717 155 14.499046749898602
+		 157 14.499046749898602 158 6.2682185565335304 160 6.2682185565335304 161 26.842020283609628
+		 163 26.842020283609628 164 6.1183276243967644 165 6.1183276243967644 166 30.883790612031472
+		 167 30.883790612031472 168 18.990373829957576 169 18.990373829957576 170 37.931953208787924
+		 171 37.931953208787924 172 30.109426771098192;
 createNode animCurveTA -n "R_Arm_3_IK_Ctrl_rotateZ";
 	rename -uid "531BEA19-4C62-B911-8037-A3B21020B25E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 21 ".ktv[0:20]"  1 103.43913588761158 36 103.43913588761158
-		 40 207.91753207762602 43 187.52370192169903 57 187.52370192169903 62 208.73317709254454
-		 70 213.9296251938577 85 134.71028744673265 100 118.89122839118048 102 112.69072668346037
-		 105 110.90154082774944 108 94.830410333959009 109 82.726834907159557 111 63.35728908221293
-		 113 47.840152582150196 121 3.5948618967986112 126 0 145 16.089566395775311 154 -24.591177380333793
-		 165 6.758979492028975 177 -22.944418041493488;
+	setAttr -s 40 ".ktv[0:39]"  1 103.43913588761158 9 122.46314232357686
+		 36 103.43913588761158 41 207.91753207762602 43 187.52370192169903 57 187.52370192169903
+		 62 208.73317709254454 70 213.9296251938577 85 134.71028744673265 100 118.89122839118048
+		 102 112.69072668346037 105 110.90154082774944 108 94.830410333959009 109 82.726834907159557
+		 111 63.35728908221293 113 47.840152582150196 121 3.5948618967986112 126 0 145 16.089566395775311
+		 148 5.5427068982655419 149 6.0621619272776437 151 -4.7278135090016544 152 19.651780481196933
+		 154 -24.591177380333793 155 -27.804311654810061 157 -24.209729375538757 158 8.2159535250547187
+		 160 8.1819716234098028 161 3.7014409352384989 163 5.2302102136337485 164 21.112735202494367
+		 165 6.758979492028975 166 -10.326316333413558 167 -12.665890032529507 168 14.327500649997583
+		 169 13.049314137943689 170 -2.1484058058832005 171 -6.6059183310402734 172 27.726698969682321
+		 177 -22.944418041493488;
 createNode animCurveTU -n "R_Arm_3_IK_Ctrl_visibility";
 	rename -uid "9ECF62C7-40B4-154E-1423-F7B7079CD048";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 1 36 1 57 1 126 1;
-	setAttr -s 4 ".kot[0:3]"  5 5 5 5;
+	setAttr -s 13 ".ktv[0:12]"  1 1 36 1 57 1 126 1 148 1 151 1 157 1 160 1
+		 163 1 165 1 167 1 169 1 171 1;
+	setAttr -s 13 ".kot[0:12]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5;
 createNode animCurveTL -n "R_Arm_3_IK_Ctrl_translateX";
 	rename -uid "BFC95E0F-491B-C40F-CC70-8EA8F61EAC11";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 20 ".ktv[0:19]"  1 -2.0486252337001374 36 -2.0486252337001374
-		 40 -4.0187870067276528 57 -4.0187870067276528 62 -4.1539954271203232 66 -4.0566914714149807
-		 70 -4.1706025529655353 75 -4.1113135599679271 80 -1.9773166600604117 85 -1.9773166600604117
-		 96 -2.0753334770282681 100 -1.4296699682857952 102 -1.1156984732684823 105 -0.905334966602938
-		 108 -1.1662797326328478 109 -0.44748389686482065 111 1.2032253564638331 113 2.2290749504828664
-		 121 0.38617670358378881 126 0;
+	setAttr -s 40 ".ktv[0:39]"  1 -2.0486252337001374 9 -2.1989698758409522
+		 36 -2.0486252337001374 41 -4.0187870067276528 57 -4.0187870067276528 62 -4.1539954271203232
+		 66 -4.0566914714149807 70 -4.1706025529655353 75 -4.1113135599679271 80 -1.9773166600604117
+		 85 -1.9773166600604117 96 -2.0753334770282681 100 -1.4296699682857952 102 -1.1156984732684823
+		 105 -0.905334966602938 108 -1.1662797326328478 109 -0.44748389686482065 111 1.2032253564638331
+		 113 2.2290749504828664 121 0.38617670358378881 126 0 148 0 149 -0.046528941829714718
+		 151 -0.046528941829714718 152 -0.039658392119345597 155 -0.10535534439755985 157 -0.10535534439755985
+		 158 -0.015626260096764735 160 -0.015626260096764735 161 -0.17246961439288255 163 -0.17246961439288255
+		 164 -0.11636692365059927 165 -0.11636692365059927 166 -0.18798445653134255 167 -0.18798445653134255
+		 168 -0.11138333724414892 169 -0.11138333724414892 170 -0.23676696355738902 171 -0.23676696355738902
+		 172 -0.20408847463928845;
 createNode animCurveTL -n "R_Arm_3_IK_Ctrl_translateY";
 	rename -uid "FAEFE9BC-43DD-ACC9-36CC-4C8F97AD8203";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 20 ".ktv[0:19]"  1 1.9684126504478683 36 1.9684126504478683
-		 40 -2.8288842797556022 57 -2.8288842797556022 62 -3.0081601831942644 66 -2.8694303098608325
-		 70 -3.0387167591341049 75 -2.9399897161797535 80 -1.006406139021693 85 -1.006406139021693
-		 96 0.68402334240101847 100 1.1938132145786531 102 1.3292724491075196 105 1.3976145299385498
-		 108 0.89831284527092792 109 0.89169231515409197 111 0.76652941274822894 113 0.79263471107327543
-		 121 -0.075616052154671543 126 0;
+	setAttr -s 40 ".ktv[0:39]"  1 1.9684126504478683 9 1.80629291534471
+		 36 1.9684126504478683 41 -2.8288842797556022 57 -2.8288842797556022 62 -3.0081601831942644
+		 66 -2.8694303098608325 70 -3.0387167591341049 75 -2.9399897161797535 80 -1.006406139021693
+		 85 -1.006406139021693 96 0.68402334240101847 100 1.1938132145786531 102 1.3292724491075196
+		 105 1.3976145299385498 108 0.89831284527092792 109 0.89169231515409197 111 0.76652941274822894
+		 113 0.79263471107327543 121 -0.075616052154671543 126 0 148 0 149 -0.04683568586918866
+		 151 -0.04683568586918866 152 0.059322831332224657 155 -0.021704299453276742 157 -0.021704299453276742
+		 158 0.21263158128312479 160 0.21263158128312479 161 0.050513347530928239 163 0.050513347530928239
+		 164 0.18775187336449572 165 0.18775187336449572 166 0.01256090647326759 167 0.01256090647326759
+		 168 0.20058556337643937 169 0.20058556337643937 170 0.024534800680814997 171 0.024534800680814997
+		 172 0.19471787896233128;
 createNode animCurveTL -n "R_Arm_3_IK_Ctrl_translateZ";
 	rename -uid "2C144071-4AA8-9970-EBC6-F2B928F53EC5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 20 ".ktv[0:19]"  1 -0.49993123412384854 36 -0.49993123412384854
-		 40 3.8119310627039593 57 3.8119310627039593 62 3.4674254719155897 66 3.7228740204163842
-		 70 3.4184996177572202 75 3.585143745541302 80 1.915353977622658 85 1.915353977622658
-		 96 1.2324984635394571 100 0.74474242264693657 102 0.54028723247193966 105 0.41328615308333383
-		 108 0.34616826641688675 109 0.41413226174260087 111 0.98379820401535223 113 1.7169951181173246
-		 121 0.45433076489574925 126 0;
+	setAttr -s 40 ".ktv[0:39]"  1 -0.49993123412384854 9 0.89284670423470014
+		 36 -0.49993123412384854 41 3.8119310627039593 57 3.8119310627039593 62 3.4674254719155897
+		 66 3.7228740204163842 70 3.4184996177572202 75 3.585143745541302 80 1.915353977622658
+		 85 1.915353977622658 96 1.2324984635394571 100 0.74474242264693657 102 0.54028723247193966
+		 105 0.41328615308333383 108 0.34616826641688675 109 0.41413226174260087 111 0.98379820401535223
+		 113 1.7169951181173246 121 0.45433076489574925 126 0 148 0 149 -0.11584650386911016
+		 151 -0.11584650386911016 152 0.015010976288369733 155 -0.14249971171787662 157 -0.14249971171787662
+		 158 0.044781052034683737 160 0.044781052034683737 161 -0.33227016662144226 163 -0.33227016662144226
+		 164 -0.10284416011592987 165 -0.10284416011592987 166 -0.39571646886184997 167 -0.39571646886184997
+		 168 -0.0711777184982232 169 -0.0711777184982232 170 -0.29413387138542518 171 -0.29413387138542518
+		 172 -0.092714263314151682;
 createNode animCurveTU -n "R_Arm_3_IK_Ctrl_Stretchy";
 	rename -uid "DBCD7D5B-48E9-1F4C-B89E-0784F74773DB";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 1 36 1 57 1 126 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 36 1 57 1 126 1 148 1 151 1 157 1 160 1
+		 163 1 165 1 167 1 169 1 171 1;
 createNode animCurveTU -n "R_Arm_3_IK_Ctrl_Length_1";
 	rename -uid "AA8820B4-4617-14EE-10DA-3E8C3028EFE3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 1 36 1 57 1 126 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 36 1 57 1 126 1 148 1 151 1 157 1 160 1
+		 163 1 165 1 167 1 169 1 171 1;
 createNode animCurveTU -n "R_Arm_3_IK_Ctrl_Length_2";
 	rename -uid "89A24AFF-46DB-2C86-580D-638E29A993A0";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 1 36 1 57 1 126 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 36 1 57 1 126 1 148 1 151 1 157 1 160 1
+		 163 1 165 1 167 1 169 1 171 1;
 createNode animCurveTU -n "R_Arm_3_IK_Ctrl_FollowOrient";
 	rename -uid "7923E2ED-40A6-D591-227E-4893D5945949";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 1 36 1 57 1 126 1;
+	setAttr -s 13 ".ktv[0:12]"  1 1 36 1 57 1 126 1 148 1 151 1 157 1 160 1
+		 163 1 165 1 167 1 169 1 171 1;
 createNode animCurveTA -n "R_Arm_3_FK_Ctrl_rotateX";
 	rename -uid "3D7A6800-48B7-57F0-C20B-6D8F3FEF447E";
 	setAttr ".tan" 18;
@@ -40122,17 +36833,17 @@ createNode animCurveTA -n "L_Arm_2_PV_IK_Ctrl_rotateX";
 	rename -uid "02AEA8B6-4F0D-BA2B-A4F3-34870A0B93C4";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0 57 0 75 0 109 0;
+	setAttr -s 5 ".ktv[0:4]"  1 0 57 0 75 0 109 0 157 0;
 createNode animCurveTA -n "L_Arm_2_PV_IK_Ctrl_rotateY";
 	rename -uid "63E76082-41CC-43E5-16A9-529D618EC534";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0 57 0 75 0 109 0;
+	setAttr -s 5 ".ktv[0:4]"  1 0 57 0 75 0 109 0 157 0;
 createNode animCurveTA -n "L_Arm_2_PV_IK_Ctrl_rotateZ";
 	rename -uid "8D908D7B-4A78-7E4F-5597-B9BC8415D299";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 0 57 0 75 0 109 0;
+	setAttr -s 5 ".ktv[0:4]"  1 0 57 0 75 0 109 0 157 0;
 createNode animCurveTA -n "R_Arm_2_PV_IK_Ctrl_rotateX";
 	rename -uid "3DC4B433-4B07-3100-335B-6BB26D17C61F";
 	setAttr ".tan" 18;
@@ -40176,104 +36887,140 @@ createNode animCurveTU -n "L_Arm_2_PV_IK_Ctrl_visibility";
 	rename -uid "DDA44BD5-4365-E67B-4B86-EFB10B80ACB1";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  1 1 57 1 75 1 109 1;
-	setAttr -s 4 ".kot[0:3]"  5 5 5 5;
+	setAttr -s 5 ".ktv[0:4]"  1 1 57 1 75 1 109 1 157 1;
+	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
 createNode animCurveTL -n "L_Arm_2_PV_IK_Ctrl_translateX";
 	rename -uid "51D2A7F9-4E42-1BCF-6981-AB9AF21F7AF5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 1.4293077950278228 57 1.4293077950278228
+	setAttr -s 11 ".ktv[0:10]"  1 1.4293077950278228 57 1.4293077950278228
 		 75 1.4293077950278228 86 2.6785483843272355 109 2.6785483843272355 113 1.034118163603071
-		 126 0;
+		 126 0 157 0 165 0.01085939645229498 168 0.20734359411185974 180 0.77418574739538193;
 createNode animCurveTL -n "L_Arm_2_PV_IK_Ctrl_translateY";
 	rename -uid "CA8064CA-4F98-9E1F-684F-A885832D13E0";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 -0.5175825722314159 57 -0.5175825722314159
+	setAttr -s 11 ".ktv[0:10]"  1 -0.5175825722314159 57 -0.5175825722314159
 		 75 -0.5175825722314159 86 0.81504924103263321 109 0.81504924103263321 113 -0.56259209987569025
-		 126 0;
+		 126 0 157 0 165 -0.033828965995053549 168 -0.28230390427984303 180 -0.18589537328079209;
 createNode animCurveTL -n "L_Arm_2_PV_IK_Ctrl_translateZ";
 	rename -uid "F6F2969D-4F38-3C2C-8D9A-CB9AF42191F5";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  1 -0.76510053653176757 57 -0.76510053653176757
+	setAttr -s 11 ".ktv[0:10]"  1 -0.76510053653176757 57 -0.76510053653176757
 		 75 -0.76510053653176757 86 -3.9866522367076627 109 -3.9866522367076627 113 -0.92459195656375903
-		 126 0;
+		 126 0 157 0 165 -0.00071129858184265649 168 0.43212482252573664 180 0.20015059974506305;
 createNode animCurveTA -n "L_Arm_3_IK_Ctrl_rotateX";
 	rename -uid "7CBC7EA7-406A-3E0C-F179-66AA7677B8BF";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  1 62.287561209941153 40 62.287561209941153
-		 43 65.129113142176692 57 65.129113142176692 77 74.935754431137596 82 64.317883373193453
-		 88 68.245393548098306 105 65.074259695460199 111 -31.233345259040874 126 0;
+	setAttr -s 31 ".ktv[0:30]"  1 62.287561209941153 40 62.287561209941153
+		 43 67.327277549392775 57 65.129113142176692 77 74.935754431137596 82 64.317883373193453
+		 88 68.245393548098306 105 65.074259695460199 111 -31.233345259040874 126 0 145 0
+		 146 -6.3123382149594409 148 -6.3123382149594409 149 17.594483026338107 150 19.931551245702998
+		 151 19.931551245702998 152 11.386807804363329 154 11.386807804363329 155 21.697107401283141
+		 157 21.697107401283141 158 25.278728176213587 161 36.488348000641672 165 25.278728176213587
+		 166 33.391926773730361 167 33.391926773730361 168 33.708435079804481 170 42.816719258576114
+		 171 41.448393195595393 172 49.197660215690668 174 2.5334137644013421 180 -54.232973922539564;
 createNode animCurveTA -n "L_Arm_3_IK_Ctrl_rotateY";
 	rename -uid "C7F9D357-48EA-AE99-36CC-7CB7F07C73CC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  1 -26.927666217225823 40 -26.927666217225823
-		 43 -9.6573413018484651 57 -9.6573413018484651 77 -22.145332805726579 82 7.0489062705928083
-		 88 15.637837156290463 105 43.153550956264816 111 37.826057882808449 126 0;
+	setAttr -s 31 ".ktv[0:30]"  1 -26.927666217225823 40 -26.927666217225823
+		 43 -14.232240787815806 57 -9.6573413018484651 77 -22.145332805726579 82 7.0489062705928083
+		 88 15.637837156290463 105 43.153550956264816 111 37.826057882808449 126 0 145 0 146 22.340511213973507
+		 148 22.340511213973507 149 15.323139292529818 150 12.065352948819264 151 12.065352948819264
+		 152 20.315929813344411 154 20.315929813344411 155 8.336468747159298 157 8.336468747159298
+		 158 25.312843523749176 161 8.3759311511122636 165 25.312843523749176 166 11.75267963504381
+		 167 11.75267963504381 168 36.74936669955698 170 14.064634170165604 171 11.986618770487464
+		 172 39.197254220900795 174 22.925147935586143 180 36.693451293821816;
 createNode animCurveTA -n "L_Arm_3_IK_Ctrl_rotateZ";
 	rename -uid "4435064D-4168-34F8-1C77-27A4D426F6B1";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 15 ".ktv[0:14]"  1 118.2336800867097 40 118.2336800867097
-		 43 109.29929007455762 57 109.29929007455762 77 74.720672697093548 82 143.50921004624584
-		 88 163.23204472987379 105 171.96071608318522 111 22.009286256689482 126 0 149 -32.037044858379254
-		 154 3.297568218188863 161 -42.585741259693116 169 -1.3084827300274449 180 -17.300806131020529;
+	setAttr -s 32 ".ktv[0:31]"  1 118.2336800867097 40 118.2336800867097
+		 43 98.715907433584064 57 109.29929007455762 77 74.720672697093548 82 143.50921004624584
+		 88 163.23204472987379 105 171.96071608318522 111 22.009286256689482 126 0 145 -30.284465680553556
+		 146 -40.295537273178716 148 -36.599974678403179 149 34.383130591931788 150 42.02142226466902
+		 151 37.412987629980812 152 -3.8793753400203115 154 3.297568218188863 155 40.618397145064215
+		 157 19.046953854941684 158 -12.07717461994431 161 26.934570100279288 165 -4.5447537713247792
+		 166 21.497370862288484 167 16.200586232428545 168 -14.140258674955188 169 -1.3084827300274449
+		 170 26.105139238275576 171 27.861358078570369 172 5.7113677787575581 174 49.620236455526054
+		 180 16.077860955972984;
 createNode animCurveTU -n "L_Arm_3_IK_Ctrl_visibility";
 	rename -uid "FF202F7C-4943-D242-28D7-C4841D8205D0";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 40 1 57 1;
-	setAttr -s 3 ".kot[0:2]"  5 5 5;
+	setAttr -s 10 ".ktv[0:9]"  1 1 40 1 57 1 145 1 148 1 151 1 154 1 157 1
+		 165 1 167 1;
+	setAttr -s 10 ".kot[0:9]"  5 5 5 5 5 5 5 5 
+		5 5;
 createNode animCurveTL -n "L_Arm_3_IK_Ctrl_translateX";
 	rename -uid "6EDB81FA-4D42-AF2B-2E7A-67981A4499E8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 18 ".ktv[0:17]"  1 0.95395778993598168 40 0.95395778993598168
-		 43 0.88010335557990083 57 0.88010335557990083 62 0.57837947241989429 66 0.80962906569834292
-		 69 0.4975991236016144 74 0.77715661677779924 77 -0.047851172687264243 82 1.2054959119429816
-		 88 2.7497801940266409 90 2.7497801940268092 92 3.16989829895999 95 3.9500187405302514
-		 100 3.4720370603155262 105 3.1370724809744361 111 0.62826279628008364 126 0;
+	setAttr -s 37 ".ktv[0:36]"  1 0.95395778993598168 9 0.66522063670948905
+		 40 0.95395778993598168 43 0.88010335557990083 57 0.88010335557990083 62 0.57837947241989429
+		 66 0.80962906569834292 69 0.4975991236016144 74 0.77715661677779924 77 -0.047851172687264243
+		 82 1.2054959119429816 88 2.7497801940266409 90 2.7497801940268092 92 3.16989829895999
+		 95 3.9500187405302514 100 3.4720370603155262 105 3.1370724809744361 111 0.62826279628008364
+		 126 0 145 0 148 0 149 0.22367236911666324 151 0.22367236911666324 152 0.15130206209149416
+		 154 0.15130206209149416 155 0.34937075748889185 157 0.34937075748889185 158 0.17565046679645621
+		 160 0.13843210051620861 161 0.39730456811136394 165 0.13843210051620861 166 0.20584817688771101
+		 167 0.20584817688771101 168 0.33533909087474595 170 0.031645898660138852 172 0.41706121615883374
+		 174 0.51812447713572352;
 createNode animCurveTL -n "L_Arm_3_IK_Ctrl_translateY";
 	rename -uid "C295AB21-4A43-7646-B226-76BA9FE9DFD3";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 18 ".ktv[0:17]"  1 -1.3828702151826024 40 -1.3828702151826024
-		 43 -1.375170186027439 57 -1.375170186027439 62 -1.6666190829413383 66 -1.4598383651664337
-		 69 -1.7191668592530507 74 -1.4949135670168519 77 -1.0922234697048665 82 -0.94381084454978525
-		 88 -1.0063969213612367 90 -1.006396921361443 92 -1.0722256433288069 95 -0.91957749089999674
-		 100 -1.0311676768907321 105 -1.1355345885723411 111 -0.34373120105469518 126 0;
+	setAttr -s 37 ".ktv[0:36]"  1 -1.3828702151826024 9 -2.0533446625368907
+		 40 -1.3828702151826024 43 -1.375170186027439 57 -1.375170186027439 62 -1.6666190829413383
+		 66 -1.4598383651664337 69 -1.7191668592530507 74 -1.4949135670168519 77 -1.0922234697048665
+		 82 -0.94381084454978525 88 -1.0063969213612367 90 -1.006396921361443 92 -1.0722256433288069
+		 95 -0.91957749089999674 100 -1.0311676768907321 105 -1.1355345885723411 111 -0.34373120105469518
+		 126 0 145 0 148 0 149 -0.44934205832966251 151 -0.44934205832966251 152 -0.026308600792077828
+		 154 -0.026308600792077828 155 -0.41939563181821682 157 -0.41939563181821682 158 0.022922434410257729
+		 160 0.001234942176603528 161 -0.16959232177604888 165 0.001234942176603528 166 -0.59357013206855158
+		 167 -0.59357013206855158 168 -0.049170589668644106 170 -0.45765466303064178 172 -0.10311367452062344
+		 174 -0.3727779520397006;
 createNode animCurveTL -n "L_Arm_3_IK_Ctrl_translateZ";
 	rename -uid "4A824802-48A7-FF27-1E51-1AAECD0BC00D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 18 ".ktv[0:17]"  1 -0.0576891262218929 40 -0.0576891262218929
-		 43 -0.18994160040152611 57 -0.18994160040152611 62 -0.87460305396496063 66 -0.36271098910350441
-		 69 -1.0381720726695673 74 -0.43926856330847353 77 -1.6402019346534171 82 -2.4514516146970071
-		 88 -2.5999881181443332 90 -2.5999881181445512 92 -1.913697602168895 95 -0.4279984125438997
-		 100 0.28153733281158144 105 0.39817095809075942 111 -0.011448197247784449 126 0;
+	setAttr -s 37 ".ktv[0:36]"  1 -0.0576891262218929 9 -0.91803848940794597
+		 40 -0.0576891262218929 43 -0.18994160040152611 57 -0.18994160040152611 62 -0.87460305396496063
+		 66 -0.36271098910350441 69 -1.0381720726695673 74 -0.43926856330847353 77 -1.6402019346534171
+		 82 -2.4514516146970071 88 -2.5999881181443332 90 -2.5999881181445512 92 -1.913697602168895
+		 95 -0.4279984125438997 100 0.28153733281158144 105 0.39817095809075942 111 -0.011448197247784449
+		 126 0 145 0 148 0 149 0.025382821810963942 151 0.025382821810963942 152 0.14220819221960221
+		 154 0.14220819221960221 155 0.12698810182394893 157 0.12698810182394893 158 0.30921106294946088
+		 160 0.33193911546956451 161 0.3247026508869631 165 0.33193911546956451 166 0.093265237688148428
+		 167 0.093265237688148428 168 0.55661255866537351 170 -0.081209198905750998 172 0.53181909874890776
+		 174 0.46841628665799612;
 createNode animCurveTU -n "L_Arm_3_IK_Ctrl_Stretchy";
 	rename -uid "6DCCF478-4B4C-6A6F-13EA-5883E6C276A0";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 40 1 57 1;
+	setAttr -s 10 ".ktv[0:9]"  1 1 40 1 57 1 145 1 148 1 151 1 154 1 157 1
+		 165 1 167 1;
 createNode animCurveTU -n "L_Arm_3_IK_Ctrl_Length_1";
 	rename -uid "4B71B959-47F5-A571-2ACD-748FA87A8E4A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 40 1 57 1;
+	setAttr -s 10 ".ktv[0:9]"  1 1 40 1 57 1 145 1 148 1 151 1 154 1 157 1
+		 165 1 167 1;
 createNode animCurveTU -n "L_Arm_3_IK_Ctrl_Length_2";
 	rename -uid "43790833-41E9-0A34-D6C7-8394FECE714D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 40 1 57 1;
+	setAttr -s 10 ".ktv[0:9]"  1 1 40 1 57 1 145 1 148 1 151 1 154 1 157 1
+		 165 1 167 1;
 createNode animCurveTU -n "L_Arm_3_IK_Ctrl_FollowOrient";
 	rename -uid "419C4C60-4A97-978D-DC44-8687FA076A01";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 3 ".ktv[0:2]"  1 1 40 1 57 1;
+	setAttr -s 10 ".ktv[0:9]"  1 1 40 1 57 1 145 1 148 1 151 1 154 1 157 1
+		 165 1 167 1;
 createNode animCurveTU -n "L_Arm_Claw_Bottom_FK_Ctrl_visibility";
 	rename -uid "A87CFDDE-42DA-F8B3-474B-C5B0F218376A";
 	setAttr ".tan" 9;
@@ -40964,17 +37711,17 @@ createNode animCurveTL -n "FR_AIM_IK_Ctrl_translateX";
 	setAttr ".wgt" no;
 	setAttr -s 18 ".ktv[0:17]"  1 -1.5759149850378067e-16 40 -1.5759149850378067e-16
 		 42 1.1349106724358886 57 1.1349106724358886 86 1.1349106724358886 96 7.8037079466848871
-		 105 5.4079392396837269 107 5.3666862299419904 108 4.5512937879477136 110 1.7544096491216443
-		 111 1.2017210559086173 115 1.2017210559086173 120 1.3855441891370281 122 0.39066845231548786
+		 105 5.6900672892077946 107 5.8675061765310232 108 5.2266631285111966 110 1.7544096491216443
+		 111 1.2017210559086173 115 1.2017210559086173 120 2.1108754332662381 122 0.39066845231548786
 		 125 0.2399824379536567 127 0.13314691292098135 130 0.98853331843851744 134 0.23998243795364127;
 createNode animCurveTL -n "FR_AIM_IK_Ctrl_translateY";
 	rename -uid "BA787759-462B-1494-BFD7-4ABBE7232F8D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 18 ".ktv[0:17]"  1 0 40 0 42 -0.57619020775628738 57 -0.57619020775628738
-		 86 -0.57619020775628738 96 1.1858002690876583 105 0.23420348150640927 107 0.22966174842861165
-		 108 0.30741616965565299 110 0.20859948418956265 111 0.040404545204523856 115 0.040404545204523856
-		 120 1.2364361467659275 122 -0.91505462010678684 125 -0.93364629006964606 127 -1.096701312913126
+		 86 -0.57619020775628738 96 1.1858002690876583 105 1.3401813347446203 107 1.3687638573951324
+		 108 1.5891165035184198 110 0.20859948418956265 111 0.040404545204523856 115 0.040404545204523856
+		 120 1.2158848725515872 122 -0.91505462010678684 125 -0.93364629006964606 127 -1.096701312913126
 		 130 -0.026080969673024684 134 -0.93364629006964373;
 createNode animCurveTL -n "FR_AIM_IK_Ctrl_translateZ";
 	rename -uid "AEA83055-4E54-560D-F1EE-CAA9EABA4BA0";
@@ -40982,8 +37729,8 @@ createNode animCurveTL -n "FR_AIM_IK_Ctrl_translateZ";
 	setAttr ".wgt" no;
 	setAttr -s 18 ".ktv[0:17]"  1 2.0810196576174355e-16 40 2.0810196576174355e-16
 		 42 -0.82823403042146204 57 -0.82823403042146204 86 -0.82823403042146204 96 -1.4421941487408025
-		 105 1.5981310537726188 107 2.0980267958403824 108 2.283605282946723 110 1.1149265707800846
-		 111 0.68887017167162368 115 0.68887017167162368 120 0.57281880545201402 122 4.380090188232316
+		 105 1.215312354000293 107 1.8309314148839133 108 2.1563044213344882 110 1.1149265707800846
+		 111 0.68887017167162368 115 0.68887017167162368 120 0.51414266979967493 122 4.380090188232316
 		 125 2.390686075041685 127 1.013462137987744 130 2.2210502868648505 134 2.3906860750417622;
 createNode animCurveTA -n "FR_AIM_IK_Ctrl_rotateX";
 	rename -uid "7F254E37-40DD-65E3-7A6F-8AA0B8E12750";
@@ -41904,8 +38651,8 @@ createNode animCurveTU -n "Face01_Geo8_visibility";
 	setAttr -s 5 ".ktv[0:4]"  88 1 109 1 110 0 144 1 173 0;
 	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
 select -ne :time1;
-	setAttr ".o" 200;
-	setAttr ".unw" 200;
+	setAttr ".o" 135;
+	setAttr ".unw" 135;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -41924,11 +38671,11 @@ select -ne :postProcessList1;
 select -ne :defaultRenderUtilityList1;
 	setAttr -s 20 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 5 ".r";
+	setAttr -s 3 ".r";
 select -ne :initialShadingGroup;
-	setAttr -s 45 ".dsm";
+	setAttr -s 43 ".dsm";
 	setAttr ".ro" yes;
-	setAttr -s 36 ".gn";
+	setAttr -s 34 ".gn";
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :defaultResolution;
@@ -41937,127 +38684,7 @@ select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
 select -ne :ikSystem;
-	setAttr -s 7 ".sol";
-connectAttr "COG_Jnt_Ctrl_FollowTranslate2.o" "Penguin1RN.phl[1]";
-connectAttr "COG_Jnt_Ctrl_FollowRotate2.o" "Penguin1RN.phl[2]";
-connectAttr "COG_Jnt_Ctrl_translateX2.o" "Penguin1RN.phl[3]";
-connectAttr "COG_Jnt_Ctrl_translateZ2.o" "Penguin1RN.phl[4]";
-connectAttr "COG_Jnt_Ctrl_translateY2.o" "Penguin1RN.phl[5]";
-connectAttr "COG_Jnt_Ctrl_rotateX2.o" "Penguin1RN.phl[6]";
-connectAttr "COG_Jnt_Ctrl_rotateY2.o" "Penguin1RN.phl[7]";
-connectAttr "COG_Jnt_Ctrl_rotateZ2.o" "Penguin1RN.phl[8]";
-connectAttr "COG_Jnt_Ctrl_scaleX2.o" "Penguin1RN.phl[9]";
-connectAttr "COG_Jnt_Ctrl_scaleY2.o" "Penguin1RN.phl[10]";
-connectAttr "COG_Jnt_Ctrl_scaleZ2.o" "Penguin1RN.phl[11]";
-connectAttr "COG_Jnt_Ctrl_visibility2.o" "Penguin1RN.phl[12]";
-connectAttr "Spine_02_Jnt_Ctrl_FollowTranslate2.o" "Penguin1RN.phl[13]";
-connectAttr "Spine_02_Jnt_Ctrl_FollowRotate2.o" "Penguin1RN.phl[14]";
-connectAttr "Spine_02_Jnt_Ctrl_translateX2.o" "Penguin1RN.phl[15]";
-connectAttr "Spine_02_Jnt_Ctrl_translateY2.o" "Penguin1RN.phl[16]";
-connectAttr "Spine_02_Jnt_Ctrl_translateZ2.o" "Penguin1RN.phl[17]";
-connectAttr "Spine_02_Jnt_Ctrl_rotateX2.o" "Penguin1RN.phl[18]";
-connectAttr "Spine_02_Jnt_Ctrl_rotateY2.o" "Penguin1RN.phl[19]";
-connectAttr "Spine_02_Jnt_Ctrl_rotateZ2.o" "Penguin1RN.phl[20]";
-connectAttr "Spine_02_Jnt_Ctrl_scaleX2.o" "Penguin1RN.phl[21]";
-connectAttr "Spine_02_Jnt_Ctrl_scaleY2.o" "Penguin1RN.phl[22]";
-connectAttr "Spine_02_Jnt_Ctrl_scaleZ2.o" "Penguin1RN.phl[23]";
-connectAttr "Spine_02_Jnt_Ctrl_visibility2.o" "Penguin1RN.phl[24]";
-connectAttr "Spine_04_Jnt_Ctrl_FollowTranslate2.o" "Penguin1RN.phl[25]";
-connectAttr "Spine_04_Jnt_Ctrl_FollowRotate2.o" "Penguin1RN.phl[26]";
-connectAttr "Spine_04_Jnt_Ctrl_translateX2.o" "Penguin1RN.phl[27]";
-connectAttr "Spine_04_Jnt_Ctrl_translateY2.o" "Penguin1RN.phl[28]";
-connectAttr "Spine_04_Jnt_Ctrl_translateZ2.o" "Penguin1RN.phl[29]";
-connectAttr "Spine_04_Jnt_Ctrl_rotateX2.o" "Penguin1RN.phl[30]";
-connectAttr "Spine_04_Jnt_Ctrl_rotateY2.o" "Penguin1RN.phl[31]";
-connectAttr "Spine_04_Jnt_Ctrl_rotateZ2.o" "Penguin1RN.phl[32]";
-connectAttr "Spine_04_Jnt_Ctrl_scaleX2.o" "Penguin1RN.phl[33]";
-connectAttr "Spine_04_Jnt_Ctrl_scaleY2.o" "Penguin1RN.phl[34]";
-connectAttr "Spine_04_Jnt_Ctrl_scaleZ2.o" "Penguin1RN.phl[35]";
-connectAttr "Spine_04_Jnt_Ctrl_visibility2.o" "Penguin1RN.phl[36]";
-connectAttr "Neck_Jnt_Ctrl_FollowTranslate2.o" "Penguin1RN.phl[37]";
-connectAttr "Neck_Jnt_Ctrl_FollowRotate2.o" "Penguin1RN.phl[38]";
-connectAttr "Neck_Jnt_Ctrl_translateX2.o" "Penguin1RN.phl[39]";
-connectAttr "Neck_Jnt_Ctrl_translateY2.o" "Penguin1RN.phl[40]";
-connectAttr "Neck_Jnt_Ctrl_translateZ2.o" "Penguin1RN.phl[41]";
-connectAttr "Neck_Jnt_Ctrl_rotateX2.o" "Penguin1RN.phl[42]";
-connectAttr "Neck_Jnt_Ctrl_rotateY2.o" "Penguin1RN.phl[43]";
-connectAttr "Neck_Jnt_Ctrl_rotateZ2.o" "Penguin1RN.phl[44]";
-connectAttr "Neck_Jnt_Ctrl_scaleX2.o" "Penguin1RN.phl[45]";
-connectAttr "Neck_Jnt_Ctrl_scaleY2.o" "Penguin1RN.phl[46]";
-connectAttr "Neck_Jnt_Ctrl_scaleZ2.o" "Penguin1RN.phl[47]";
-connectAttr "Neck_Jnt_Ctrl_visibility2.o" "Penguin1RN.phl[48]";
-connectAttr "L_Wing_01_Jnt_Ctrl_FollowTranslate2.o" "Penguin1RN.phl[49]";
-connectAttr "L_Wing_01_Jnt_Ctrl_FollowRotate2.o" "Penguin1RN.phl[50]";
-connectAttr "L_Wing_01_Jnt_Ctrl_translateX2.o" "Penguin1RN.phl[51]";
-connectAttr "L_Wing_01_Jnt_Ctrl_translateY2.o" "Penguin1RN.phl[52]";
-connectAttr "L_Wing_01_Jnt_Ctrl_translateZ2.o" "Penguin1RN.phl[53]";
-connectAttr "L_Wing_01_Jnt_Ctrl_rotateX2.o" "Penguin1RN.phl[54]";
-connectAttr "L_Wing_01_Jnt_Ctrl_rotateY2.o" "Penguin1RN.phl[55]";
-connectAttr "L_Wing_01_Jnt_Ctrl_rotateZ2.o" "Penguin1RN.phl[56]";
-connectAttr "L_Wing_01_Jnt_Ctrl_scaleX2.o" "Penguin1RN.phl[57]";
-connectAttr "L_Wing_01_Jnt_Ctrl_scaleY2.o" "Penguin1RN.phl[58]";
-connectAttr "L_Wing_01_Jnt_Ctrl_scaleZ2.o" "Penguin1RN.phl[59]";
-connectAttr "L_Wing_01_Jnt_Ctrl_visibility2.o" "Penguin1RN.phl[60]";
-connectAttr "L_Wing_02_Jnt_Ctrl_FollowTranslate.o" "Penguin1RN.phl[61]";
-connectAttr "L_Wing_02_Jnt_Ctrl_FollowRotate.o" "Penguin1RN.phl[62]";
-connectAttr "L_Wing_02_Jnt_Ctrl_translateX.o" "Penguin1RN.phl[63]";
-connectAttr "L_Wing_02_Jnt_Ctrl_translateY.o" "Penguin1RN.phl[64]";
-connectAttr "L_Wing_02_Jnt_Ctrl_translateZ.o" "Penguin1RN.phl[65]";
-connectAttr "L_Wing_02_Jnt_Ctrl_rotateX.o" "Penguin1RN.phl[66]";
-connectAttr "L_Wing_02_Jnt_Ctrl_rotateY.o" "Penguin1RN.phl[67]";
-connectAttr "L_Wing_02_Jnt_Ctrl_rotateZ.o" "Penguin1RN.phl[68]";
-connectAttr "L_Wing_02_Jnt_Ctrl_scaleX.o" "Penguin1RN.phl[69]";
-connectAttr "L_Wing_02_Jnt_Ctrl_scaleY.o" "Penguin1RN.phl[70]";
-connectAttr "L_Wing_02_Jnt_Ctrl_scaleZ.o" "Penguin1RN.phl[71]";
-connectAttr "L_Wing_02_Jnt_Ctrl_visibility.o" "Penguin1RN.phl[72]";
-connectAttr "L_Wing_03_Jnt_Ctrl_FollowTranslate.o" "Penguin1RN.phl[73]";
-connectAttr "L_Wing_03_Jnt_Ctrl_FollowRotate.o" "Penguin1RN.phl[74]";
-connectAttr "L_Wing_03_Jnt_Ctrl_translateX.o" "Penguin1RN.phl[75]";
-connectAttr "L_Wing_03_Jnt_Ctrl_translateY.o" "Penguin1RN.phl[76]";
-connectAttr "L_Wing_03_Jnt_Ctrl_translateZ.o" "Penguin1RN.phl[77]";
-connectAttr "L_Wing_03_Jnt_Ctrl_rotateX.o" "Penguin1RN.phl[78]";
-connectAttr "L_Wing_03_Jnt_Ctrl_rotateY.o" "Penguin1RN.phl[79]";
-connectAttr "L_Wing_03_Jnt_Ctrl_rotateZ.o" "Penguin1RN.phl[80]";
-connectAttr "L_Wing_03_Jnt_Ctrl_scaleX.o" "Penguin1RN.phl[81]";
-connectAttr "L_Wing_03_Jnt_Ctrl_scaleY.o" "Penguin1RN.phl[82]";
-connectAttr "L_Wing_03_Jnt_Ctrl_scaleZ.o" "Penguin1RN.phl[83]";
-connectAttr "L_Wing_03_Jnt_Ctrl_visibility.o" "Penguin1RN.phl[84]";
-connectAttr "R_Wing_01_Jnt_Ctrl_FollowTranslate2.o" "Penguin1RN.phl[85]";
-connectAttr "R_Wing_01_Jnt_Ctrl_FollowRotate2.o" "Penguin1RN.phl[86]";
-connectAttr "R_Wing_01_Jnt_Ctrl_translateX2.o" "Penguin1RN.phl[87]";
-connectAttr "R_Wing_01_Jnt_Ctrl_translateY2.o" "Penguin1RN.phl[88]";
-connectAttr "R_Wing_01_Jnt_Ctrl_translateZ2.o" "Penguin1RN.phl[89]";
-connectAttr "R_Wing_01_Jnt_Ctrl_rotateX2.o" "Penguin1RN.phl[90]";
-connectAttr "R_Wing_01_Jnt_Ctrl_rotateY2.o" "Penguin1RN.phl[91]";
-connectAttr "R_Wing_01_Jnt_Ctrl_rotateZ2.o" "Penguin1RN.phl[92]";
-connectAttr "R_Wing_01_Jnt_Ctrl_scaleX2.o" "Penguin1RN.phl[93]";
-connectAttr "R_Wing_01_Jnt_Ctrl_scaleY2.o" "Penguin1RN.phl[94]";
-connectAttr "R_Wing_01_Jnt_Ctrl_scaleZ2.o" "Penguin1RN.phl[95]";
-connectAttr "R_Wing_01_Jnt_Ctrl_visibility2.o" "Penguin1RN.phl[96]";
-connectAttr "R_Wing_02_Jnt_Ctrl_FollowTranslate.o" "Penguin1RN.phl[97]";
-connectAttr "R_Wing_02_Jnt_Ctrl_FollowRotate.o" "Penguin1RN.phl[98]";
-connectAttr "R_Wing_02_Jnt_Ctrl_translateX.o" "Penguin1RN.phl[99]";
-connectAttr "R_Wing_02_Jnt_Ctrl_translateY.o" "Penguin1RN.phl[100]";
-connectAttr "R_Wing_02_Jnt_Ctrl_translateZ.o" "Penguin1RN.phl[101]";
-connectAttr "R_Wing_02_Jnt_Ctrl_rotateX.o" "Penguin1RN.phl[102]";
-connectAttr "R_Wing_02_Jnt_Ctrl_rotateY.o" "Penguin1RN.phl[103]";
-connectAttr "R_Wing_02_Jnt_Ctrl_rotateZ.o" "Penguin1RN.phl[104]";
-connectAttr "R_Wing_02_Jnt_Ctrl_scaleX.o" "Penguin1RN.phl[105]";
-connectAttr "R_Wing_02_Jnt_Ctrl_scaleY.o" "Penguin1RN.phl[106]";
-connectAttr "R_Wing_02_Jnt_Ctrl_scaleZ.o" "Penguin1RN.phl[107]";
-connectAttr "R_Wing_02_Jnt_Ctrl_visibility.o" "Penguin1RN.phl[108]";
-connectAttr "R_Wing_03_Jnt_Ctrl_FollowTranslate.o" "Penguin1RN.phl[109]";
-connectAttr "R_Wing_03_Jnt_Ctrl_FollowRotate.o" "Penguin1RN.phl[110]";
-connectAttr "R_Wing_03_Jnt_Ctrl_translateX.o" "Penguin1RN.phl[111]";
-connectAttr "R_Wing_03_Jnt_Ctrl_translateY.o" "Penguin1RN.phl[112]";
-connectAttr "R_Wing_03_Jnt_Ctrl_translateZ.o" "Penguin1RN.phl[113]";
-connectAttr "R_Wing_03_Jnt_Ctrl_rotateX.o" "Penguin1RN.phl[114]";
-connectAttr "R_Wing_03_Jnt_Ctrl_rotateY.o" "Penguin1RN.phl[115]";
-connectAttr "R_Wing_03_Jnt_Ctrl_rotateZ.o" "Penguin1RN.phl[116]";
-connectAttr "R_Wing_03_Jnt_Ctrl_scaleX.o" "Penguin1RN.phl[117]";
-connectAttr "R_Wing_03_Jnt_Ctrl_scaleY.o" "Penguin1RN.phl[118]";
-connectAttr "R_Wing_03_Jnt_Ctrl_scaleZ.o" "Penguin1RN.phl[119]";
-connectAttr "R_Wing_03_Jnt_Ctrl_visibility.o" "Penguin1RN.phl[120]";
+	setAttr -s 2 ".sol";
 connectAttr "COG_Jnt_Ctrl_FollowTranslate3.o" "PenguinRN.phl[1]";
 connectAttr "COG_Jnt_Ctrl_FollowRotate3.o" "PenguinRN.phl[2]";
 connectAttr "COG_Jnt_Ctrl_translateX3.o" "PenguinRN.phl[3]";
@@ -42178,102 +38805,6 @@ connectAttr "R_Wing_03_Jnt_Ctrl_scaleX1.o" "PenguinRN.phl[117]";
 connectAttr "R_Wing_03_Jnt_Ctrl_scaleY1.o" "PenguinRN.phl[118]";
 connectAttr "R_Wing_03_Jnt_Ctrl_scaleZ1.o" "PenguinRN.phl[119]";
 connectAttr "R_Wing_03_Jnt_Ctrl_visibility1.o" "PenguinRN.phl[120]";
-connectAttr "Spine_04_Jnt_Ctrl_FollowTranslate4.o" "PenguinRN2.phl[1]";
-connectAttr "Spine_04_Jnt_Ctrl_FollowRotate4.o" "PenguinRN2.phl[2]";
-connectAttr "Spine_04_Jnt_Ctrl_translateX4.o" "PenguinRN2.phl[3]";
-connectAttr "Spine_04_Jnt_Ctrl_translateY4.o" "PenguinRN2.phl[4]";
-connectAttr "Spine_04_Jnt_Ctrl_translateZ4.o" "PenguinRN2.phl[5]";
-connectAttr "Spine_04_Jnt_Ctrl_rotateX4.o" "PenguinRN2.phl[6]";
-connectAttr "Spine_04_Jnt_Ctrl_rotateY4.o" "PenguinRN2.phl[7]";
-connectAttr "Spine_04_Jnt_Ctrl_rotateZ4.o" "PenguinRN2.phl[8]";
-connectAttr "Spine_04_Jnt_Ctrl_scaleX4.o" "PenguinRN2.phl[9]";
-connectAttr "Spine_04_Jnt_Ctrl_scaleY4.o" "PenguinRN2.phl[10]";
-connectAttr "Spine_04_Jnt_Ctrl_scaleZ4.o" "PenguinRN2.phl[11]";
-connectAttr "Spine_04_Jnt_Ctrl_visibility4.o" "PenguinRN2.phl[12]";
-connectAttr "Neck_Jnt_Ctrl_FollowTranslate4.o" "PenguinRN2.phl[13]";
-connectAttr "Neck_Jnt_Ctrl_FollowRotate4.o" "PenguinRN2.phl[14]";
-connectAttr "Neck_Jnt_Ctrl_translateX4.o" "PenguinRN2.phl[15]";
-connectAttr "Neck_Jnt_Ctrl_translateY4.o" "PenguinRN2.phl[16]";
-connectAttr "Neck_Jnt_Ctrl_translateZ4.o" "PenguinRN2.phl[17]";
-connectAttr "Neck_Jnt_Ctrl_rotateX4.o" "PenguinRN2.phl[18]";
-connectAttr "Neck_Jnt_Ctrl_rotateY4.o" "PenguinRN2.phl[19]";
-connectAttr "Neck_Jnt_Ctrl_rotateZ4.o" "PenguinRN2.phl[20]";
-connectAttr "Neck_Jnt_Ctrl_scaleX4.o" "PenguinRN2.phl[21]";
-connectAttr "Neck_Jnt_Ctrl_scaleY4.o" "PenguinRN2.phl[22]";
-connectAttr "Neck_Jnt_Ctrl_scaleZ4.o" "PenguinRN2.phl[23]";
-connectAttr "Neck_Jnt_Ctrl_visibility4.o" "PenguinRN2.phl[24]";
-connectAttr "L_Wing_01_Jnt_Ctrl_FollowTranslate4.o" "PenguinRN2.phl[25]";
-connectAttr "L_Wing_01_Jnt_Ctrl_FollowRotate4.o" "PenguinRN2.phl[26]";
-connectAttr "L_Wing_01_Jnt_Ctrl_translateX4.o" "PenguinRN2.phl[27]";
-connectAttr "L_Wing_01_Jnt_Ctrl_translateY4.o" "PenguinRN2.phl[28]";
-connectAttr "L_Wing_01_Jnt_Ctrl_translateZ4.o" "PenguinRN2.phl[29]";
-connectAttr "L_Wing_01_Jnt_Ctrl_rotateX4.o" "PenguinRN2.phl[30]";
-connectAttr "L_Wing_01_Jnt_Ctrl_rotateY4.o" "PenguinRN2.phl[31]";
-connectAttr "L_Wing_01_Jnt_Ctrl_rotateZ4.o" "PenguinRN2.phl[32]";
-connectAttr "L_Wing_01_Jnt_Ctrl_scaleX4.o" "PenguinRN2.phl[33]";
-connectAttr "L_Wing_01_Jnt_Ctrl_scaleY4.o" "PenguinRN2.phl[34]";
-connectAttr "L_Wing_01_Jnt_Ctrl_scaleZ4.o" "PenguinRN2.phl[35]";
-connectAttr "L_Wing_01_Jnt_Ctrl_visibility4.o" "PenguinRN2.phl[36]";
-connectAttr "L_Wing_02_Jnt_Ctrl_FollowTranslate2.o" "PenguinRN2.phl[37]";
-connectAttr "L_Wing_02_Jnt_Ctrl_FollowRotate2.o" "PenguinRN2.phl[38]";
-connectAttr "L_Wing_02_Jnt_Ctrl_translateX2.o" "PenguinRN2.phl[39]";
-connectAttr "L_Wing_02_Jnt_Ctrl_translateY2.o" "PenguinRN2.phl[40]";
-connectAttr "L_Wing_02_Jnt_Ctrl_translateZ2.o" "PenguinRN2.phl[41]";
-connectAttr "L_Wing_02_Jnt_Ctrl_rotateX2.o" "PenguinRN2.phl[42]";
-connectAttr "L_Wing_02_Jnt_Ctrl_rotateY2.o" "PenguinRN2.phl[43]";
-connectAttr "L_Wing_02_Jnt_Ctrl_rotateZ2.o" "PenguinRN2.phl[44]";
-connectAttr "L_Wing_02_Jnt_Ctrl_scaleX2.o" "PenguinRN2.phl[45]";
-connectAttr "L_Wing_02_Jnt_Ctrl_scaleY2.o" "PenguinRN2.phl[46]";
-connectAttr "L_Wing_02_Jnt_Ctrl_scaleZ2.o" "PenguinRN2.phl[47]";
-connectAttr "L_Wing_02_Jnt_Ctrl_visibility2.o" "PenguinRN2.phl[48]";
-connectAttr "L_Wing_03_Jnt_Ctrl_FollowTranslate2.o" "PenguinRN2.phl[49]";
-connectAttr "L_Wing_03_Jnt_Ctrl_FollowRotate2.o" "PenguinRN2.phl[50]";
-connectAttr "L_Wing_03_Jnt_Ctrl_translateX2.o" "PenguinRN2.phl[51]";
-connectAttr "L_Wing_03_Jnt_Ctrl_translateY2.o" "PenguinRN2.phl[52]";
-connectAttr "L_Wing_03_Jnt_Ctrl_translateZ2.o" "PenguinRN2.phl[53]";
-connectAttr "L_Wing_03_Jnt_Ctrl_rotateX2.o" "PenguinRN2.phl[54]";
-connectAttr "L_Wing_03_Jnt_Ctrl_rotateY2.o" "PenguinRN2.phl[55]";
-connectAttr "L_Wing_03_Jnt_Ctrl_rotateZ2.o" "PenguinRN2.phl[56]";
-connectAttr "L_Wing_03_Jnt_Ctrl_scaleX2.o" "PenguinRN2.phl[57]";
-connectAttr "L_Wing_03_Jnt_Ctrl_scaleY2.o" "PenguinRN2.phl[58]";
-connectAttr "L_Wing_03_Jnt_Ctrl_scaleZ2.o" "PenguinRN2.phl[59]";
-connectAttr "L_Wing_03_Jnt_Ctrl_visibility2.o" "PenguinRN2.phl[60]";
-connectAttr "R_Wing_01_Jnt_Ctrl_FollowTranslate4.o" "PenguinRN2.phl[61]";
-connectAttr "R_Wing_01_Jnt_Ctrl_FollowRotate4.o" "PenguinRN2.phl[62]";
-connectAttr "R_Wing_01_Jnt_Ctrl_translateX4.o" "PenguinRN2.phl[63]";
-connectAttr "R_Wing_01_Jnt_Ctrl_translateY4.o" "PenguinRN2.phl[64]";
-connectAttr "R_Wing_01_Jnt_Ctrl_translateZ4.o" "PenguinRN2.phl[65]";
-connectAttr "R_Wing_01_Jnt_Ctrl_rotateX4.o" "PenguinRN2.phl[66]";
-connectAttr "R_Wing_01_Jnt_Ctrl_rotateY4.o" "PenguinRN2.phl[67]";
-connectAttr "R_Wing_01_Jnt_Ctrl_rotateZ4.o" "PenguinRN2.phl[68]";
-connectAttr "R_Wing_01_Jnt_Ctrl_scaleX4.o" "PenguinRN2.phl[69]";
-connectAttr "R_Wing_01_Jnt_Ctrl_scaleY4.o" "PenguinRN2.phl[70]";
-connectAttr "R_Wing_01_Jnt_Ctrl_scaleZ4.o" "PenguinRN2.phl[71]";
-connectAttr "R_Wing_01_Jnt_Ctrl_visibility4.o" "PenguinRN2.phl[72]";
-connectAttr "R_Wing_02_Jnt_Ctrl_FollowTranslate2.o" "PenguinRN2.phl[73]";
-connectAttr "R_Wing_02_Jnt_Ctrl_FollowRotate2.o" "PenguinRN2.phl[74]";
-connectAttr "R_Wing_02_Jnt_Ctrl_translateX2.o" "PenguinRN2.phl[75]";
-connectAttr "R_Wing_02_Jnt_Ctrl_translateY2.o" "PenguinRN2.phl[76]";
-connectAttr "R_Wing_02_Jnt_Ctrl_translateZ2.o" "PenguinRN2.phl[77]";
-connectAttr "R_Wing_02_Jnt_Ctrl_rotateX2.o" "PenguinRN2.phl[78]";
-connectAttr "R_Wing_02_Jnt_Ctrl_rotateY2.o" "PenguinRN2.phl[79]";
-connectAttr "R_Wing_02_Jnt_Ctrl_rotateZ2.o" "PenguinRN2.phl[80]";
-connectAttr "R_Wing_02_Jnt_Ctrl_scaleX2.o" "PenguinRN2.phl[81]";
-connectAttr "R_Wing_02_Jnt_Ctrl_scaleY2.o" "PenguinRN2.phl[82]";
-connectAttr "R_Wing_02_Jnt_Ctrl_scaleZ2.o" "PenguinRN2.phl[83]";
-connectAttr "R_Wing_02_Jnt_Ctrl_visibility2.o" "PenguinRN2.phl[84]";
-connectAttr "R_Wing_03_Jnt_Ctrl_FollowTranslate2.o" "PenguinRN2.phl[85]";
-connectAttr "R_Wing_03_Jnt_Ctrl_FollowRotate2.o" "PenguinRN2.phl[86]";
-connectAttr "R_Wing_03_Jnt_Ctrl_translateX2.o" "PenguinRN2.phl[87]";
-connectAttr "R_Wing_03_Jnt_Ctrl_translateY2.o" "PenguinRN2.phl[88]";
-connectAttr "R_Wing_03_Jnt_Ctrl_translateZ2.o" "PenguinRN2.phl[89]";
-connectAttr "R_Wing_03_Jnt_Ctrl_rotateX2.o" "PenguinRN2.phl[90]";
-connectAttr "R_Wing_03_Jnt_Ctrl_rotateY2.o" "PenguinRN2.phl[91]";
-connectAttr "R_Wing_03_Jnt_Ctrl_rotateZ2.o" "PenguinRN2.phl[92]";
-connectAttr "R_Wing_03_Jnt_Ctrl_scaleX2.o" "PenguinRN2.phl[93]";
-connectAttr "R_Wing_03_Jnt_Ctrl_scaleY2.o" "PenguinRN2.phl[94]";
-connectAttr "R_Wing_03_Jnt_Ctrl_scaleZ2.o" "PenguinRN2.phl[95]";
-connectAttr "R_Wing_03_Jnt_Ctrl_visibility2.o" "PenguinRN2.phl[96]";
 connectAttr "Translate_FK_Ctrl_scaleX.o" "EECORig_ClawRN.phl[1]";
 connectAttr "Translate_FK_Ctrl_scaleY.o" "EECORig_ClawRN.phl[2]";
 connectAttr "Translate_FK_Ctrl_scaleZ.o" "EECORig_ClawRN.phl[3]";
