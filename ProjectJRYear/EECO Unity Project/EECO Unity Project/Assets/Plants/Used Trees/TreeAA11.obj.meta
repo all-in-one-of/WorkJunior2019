@@ -23,7 +23,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: TreeA12_lambert5SG
-    second: {fileID: 2100000, guid: 72b135f4ae6c9864e8dd9a3eea215e0d, type: 2}
+    second: {fileID: 2100000, guid: 7ed1356967da8c14fbc27e25d71e8ef8, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
